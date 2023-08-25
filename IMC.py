@@ -1,5 +1,4 @@
 # Calculando o IMC
-
 peso = float(input("Digite o seu peso em Kg"))
 altura = float(input("Digite a sua altura em cm"))
 
