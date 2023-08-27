@@ -1,0 +1,12 @@
+# Exercício 1 - comandos de entrada e saída em estrutura sequencial
+
+peso = float(input('Digite seu peso (kg)'))
+altura = float(input('Digite sua altura (m)'))
+imc = peso/(altura**2)
+print('Seu IMC é', imc)
+
+print("Estou muito abaixo do peso? ", imc < 17)
+print("Estou abaixo do peso? ", imc >= 17 and imc < 18.5)
+print("Estou dentro do peso? ", 18.5 <= imc <= 25)
+print("Estou acima do peso? ", imc > 25 and imc <= 30) # usando operador lógico
+print("Estou muito acima do peso? ", imc > 30)
