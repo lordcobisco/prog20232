@@ -1,0 +1,44 @@
+# Elaborar 5 questões objetivas sobre o conteúdo da Aula 1. 
+
+1. Qual dos dispositivos funciona tanto como um dispositivo de entrada quanto de saída de informações?
+a) Caixa de som
+b) Câmera fotográfica
+c) Monitor
+d) Teclado
+
+2. A representação de algoritmos que utiliza linguagem natural para descrever o que um código deve fazer e, assim, permitir a tradução de algoritmo para uma linguagem de programação específica é chamada de:
+a) Descrição Narrativa
+b) Sistema binário
+c) Fluxograma convencional
+d) Pseudocódigo
+
+3. Instruções primitivas são comandos básicos que executam tarefas essenciais para a operação dos computadores. Dentre as alternativas, marque a que não se refere a uma instrução primitiva:
+a) Comandos de atribuição
+b) Entrada de dados
+c) Controle de fluxo
+d) Declaração de variáveis
+
+4. Qual das alternativas abaixo não apresenta uma estrutura de decisão do controle de fluxo de execução?
+a) Para <var> igual a <sim> faça
+	  <comando>
+	 Fim_para
+b) Se <condição>
+		Então <comando>
+	 Fim_se
+c) Escolha
+	  Caso <condição1>
+		  <comando 1>
+	  Caso <condição2>
+		  <comando2>
+	  Senão <comando3>
+   Fim_escolha
+d) Se <condição>
+	  Então <comando1>
+	  Senão <comando2>
+   Fim_se
+
+5. Em relação aos níveis de linguagem de programação, qual das afirmativas abaixo está correta:
+a) Linguagens de baixo nível são um tipo de linguagem híbrido, que une componentes mais complexos a componentes mais simples, com uma sintaxe mais fácil.
+b) Assembly é um exemplo de linguagem de alto nível.
+c) Quanto mais as linguagens são direcionadas para a máquina, utilizando instruções do processador, maior o nível da linguagem.
+d) Python e Java são linguagens bastante utilizadas em aplicações, por serem de alto nível.
