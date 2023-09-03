@@ -3,8 +3,11 @@
 1) Um sistema computacional é formado por diversas partes, dentre elas:
    
    *a) Aspectos de hardware: memória, processador, dispositivos de Entrada e Saída.*
+   
    b) Aspectos de hardware: wifi, CPU, monitor e mouse;
+   
    c) Aspectos de software: dispositivos de armazenamento, aplicativos, navegadores da web;
+   
    d) Aspectos de software: memória, processador, dispositivos de Entrada e Saída;
 
 3) O que são algoritmos e qual é a razão pela qual eles desempenham um papel crucial na ciência da computação?
