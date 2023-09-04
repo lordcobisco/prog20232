@@ -1,3 +1,18 @@
+'''
+Turma: 2023.2
+Professor: Andre Dantas
+Aluno: Gustavo Maciel
+
+Atividade: 2
+Aula: 3
+
+Inclua no exercício de IMC uma atualização:
+Requisito:
+    Fazer o calculo do IMC
+    Classificar a partir do resultado
+    Receber o IMC utilizando a função input
+'''
+
 peso = input("Qual o seu peso?")
 altura = input("Qual a sua altura?")
 
