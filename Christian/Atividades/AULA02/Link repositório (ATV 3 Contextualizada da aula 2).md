@@ -1,1 +1,1 @@
-[gh repo clone LangRTK/Projeto_Lokomat_ZeroG]
+[LINK REPOSITÓRIO PROJETO LOKOMAT_ZEROG](https://github.com/LangRTK/Projeto_Lokomat_ZeroG)
