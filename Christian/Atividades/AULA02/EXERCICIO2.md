@@ -28,17 +28,7 @@ c) git go
 
 d) git status
 
-## 4-  Qual é a prática recomendada de criar uma "branch" e, em seguida, mesclar essa branch de volta na branch principal após a conclusão do desenvolvimento?
-
-a) Branch and env
-
-b) Pull Request
-
-c) Forking
-
-d) Git go
-
-## 5- Qual é o principal propósito da ferramenta Git em desenvolvimento de software?
+## 4- Qual é o principal propósito da ferramenta Git em desenvolvimento de software?
 
 a) Ferramenta de busca.
 
