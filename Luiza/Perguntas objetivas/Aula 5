@@ -1,0 +1,16 @@
+Qual a diferença entre Tupla, Lista e Dicionário?
+Listas são uma coleção ordenada, na qual se usa colchetes, as tuplas são sequências de valores. É imutável e utiliza-se parênteses. O dicionário são estruturas de dados que implementam mapeamentos entre uma chave (key) e algum conteúdo (value). Usa chaves na linguagem.
+
+Crie uma lista com um dicionário
+# Criar uma lista com dois dicionários 
+lista_de_pessoas = [ {"nome": "João", "idade": 30}, {"nome": "Maria", "idade": 25} ]
+
+# Acessar os elementos da lista (os dicionários)
+primeira_pessoa = lista_de_pessoas[0]
+segunda_pessoa = lista_de_pessoas[1]
+
+#Exibir os valores
+print("Nome da primeira pessoa:", nome_da_primeira_pessoa)
+print("Idade da primeira pessoa:", idade_da_primeira_pessoa)
+print("Nome da segunda pessoa:", nome_da_segunda_pessoa)
+print("Idade da segunda pessoa:", idade_da_segunda_pessoa)
