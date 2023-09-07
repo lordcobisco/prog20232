@@ -1,0 +1,11 @@
+Quais tipos de programas são frequentemente utilizados para desenvolver softwares?
+R: Os desenvolvedores utilizam uma diversidade de recursos para construir softwares, incluindo ambientes de desenvolvimento integrado (IDEs), editores de código, sistemas de gerenciamento de versão e ferramentas para lidar com as dependências, como as bibliotecas.
+
+Qual a funcionalidade de armazenar projetos em repositórios do GitHub?
+R: Armazenar projetos em repositórios do GitHub permite controlar as mudanças no código, colaborar com outros desenvolvedores, rastrear e resolver problemas, automatizar tarefas, revisar e melhorar o código, além de permitir uma documentação clara.
+
+Quais ferramentas podemos utilizar no git para desenvolvimento de projetos em neuroengenharia?
+R: Ferramentas como o Jupyter Notebooks, EEGLAB, MNE-Python e outras, para rastrear código, dados e documentação.
+
+Quais ferramentas são essenciais em um fluxo de trabalho de desenvolvimento de projetos em neuroengenharia para otimizar a coleta, análise e interpretação de dados neurofisiológicos?
+R: A depender do projeto que está sendo desenvolvido muitas ferramentas podem ser essenciais para essa otimização, tais como o EEG e EMG, ferramentas de pré-processamento como MNE-Python. Linguagens de programação como Python, ambientes de desenvolvimento como Jupyter Notebooks e sistemas de controle de versão como Git.
