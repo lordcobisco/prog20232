@@ -1,0 +1,17 @@
+Qual a função dos dispositivos de entrada e saída de um computador?
+R: Transferência de dados dos dispositivos externos para a CPU e a memória, e vice-versa. 
+
+O que é um paradigma de programação?
+R:  É um conjunto de conceitos e diretrizes que define a forma como os programas devem ser estruturados, organizados e escritos, permite classificar as linguagens de programação baseando-se nas suas funcionalidades.
+
+Qual a diferença entre a estrutura de repetição de laços contados e condicionais?
+R: Em um laço contado sabe-se exatamente quantas o comando deverá ser executado, já no condicional, o comando se repete até que uma condição específica seja atendida, para que então possa ser finalizado.
+
+Cite um exemplo de utilização da estruturação de decisão do tipo escolha.
+R: Com a estrutura de decisão, pode-se, por exemplo, determinar se uma pessoa pode ou não jogar um jogo a depender da sua idade:
+idade = int(input("Informe sua idade: ")) #Solicite que o jogador informe sua idade 
+      if idade >= 18: print("Você pode jogar o jogo!") 
+      else: print("Desculpe, você não pode jogar o jogo.")
+
+O que são dados lógicos na programação?
+R: Dados lógicos na programação são valores ou variáveis que podem ser apenas verdadeiros ou falsos. Eles são usados para representar condições e tomar decisões em estruturas condicionais.
