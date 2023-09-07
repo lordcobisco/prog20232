@@ -1,0 +1,18 @@
+Crie um exemplo de estruturas de decisão que poderia ser utilizada em um projeto de neuroengenharia 
+#Suponha que você tenha uma única amplitude de sinal EMG
+amplitude_emg = 0.8
+#Defina um limiar de amplitude para categorizar os dados
+limiar = 1.0
+#Use uma estrutura de decisão para categorizar a amplitude 
+if amplitude_emg >= limiar: categoria = "Alta Atividade" 
+else: categoria = "Baixa Atividade"
+#Exiba a categoria da amplitude
+print("Categoria da Amplitude EMG:", categoria)
+
+--> Na  saída de dados aparecerá que a categoria do sinal é de “Baixa atividade”.
+
+Para que serve uma estrutura de decisão?
+R: Ela permite que o programa tome decisões com base em condições específicas, a partir do seu fluxo, executando diferentes blocos de código dependendo das condições. Desta forma, o programa reage a diferentes situações e executa ações que dependem de uma condicional.
+
+Qual a necessidade de utilizar estruturas mais complexas?
+R: Usa-se estruturas de decisão mais complexas quando os programas precisam tomar decisões em situações complicadas, como quando muitas coisas estão acontecendo ao mesmo tempo ou quando há muitas regras a serem seguidas. Isso ajuda a tornar os programas mais capazes de lidar com situações diferentes.
