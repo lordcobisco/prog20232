@@ -9,12 +9,13 @@
 
 # Duas ou mais listas 
 
-# lista_1 = ['bacon', 'fritas', 'picanha']
-# lista_2 = ['cerveja', 'refri', 'suco']
+lista_1 = ['bacon', 'fritas', 'picanha']
+lista_2 = ['cerveja', 'refri', 'suco']
 
-# for alimento, bebida in zip(lista_1, lista_2): 
-#     print(alimento, bebida)
+for alimento, bebida in zip(lista_1, lista_2): 
+    print(alimento, bebida)
 
+# um bloco de código é executado ao final da iteração 
 listaNomes = ['Giovanna', 'Letycia', 'Lana']
 for nome in listaNomes:
     print(nome)
