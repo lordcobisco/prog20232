@@ -1,3 +1,5 @@
+CADA UM É UMA FORMA DIFERENTE DE FAZER
+
 dado =[89127,1298,902,3097,356]
 
 
@@ -25,3 +27,12 @@ soma = 0
 for contador in range (len(dado)):
     soma = soma + (1 / frequenciaSensor)*dado[contador] #é integral pq além de somar, multiplica-se pela frequência
 print(soma)
+
+
+dicionario= {
+                "Brasil": [1,2,2,1,4,5,3],
+                "EUA" : [3,4,56,3,6,4,2]
+            }
+for pais in dicionario:
+    print (pais)
+    print (dicionario[pais])
