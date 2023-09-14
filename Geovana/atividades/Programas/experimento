@@ -1,0 +1,8 @@
+tempoexperimento = 1 #s
+frequencia = 10 #hz
+qtddados = tempoexperimento*frequencia
+print(qtddados)
+#coleta
+dado =[]
+for contador in range(qtddados):
+dado.append(float(input()))
