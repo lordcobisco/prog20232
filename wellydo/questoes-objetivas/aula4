@@ -1,0 +1,20 @@
+#Listar a necessidade de estruturas mais complexas do que a sequencial.#
+1: Que tipo de problema requer uma estrutura de decisão e quando um programa em Python pode exigir estruturas de repetição?
+A) Questões que exigem tomada de decisões com base em condições e quando é preciso realizar um conjunto de ações várias vezes. #Correta#
+B) Problemas com cálculos simples e raramente utiliza-se estruturas de repetição em Python.
+C) Problemas que necessitam de tomada de decisão com base em condições e todo programa em Python necessita de uma estrutura de repetição.
+D) Questões puramente matemáticas e quando é necessário repetir um conjunto de intruções várias vezes.
+
+#Definir estruturas de decisão.#
+2: Qual a melhor definição para uma estrutura de decisão em Python?
+A) Espécie de lista de dados capaz de armazenar informações condicionais.
+B) Regras específicas para organizar e rodar os dados presentes no programa.
+C) Conjunto de instruções que possibilitam ao programa escolher entre diferentes vias de código com base em determinadas condições. #Correta#
+D) Loops criados a partir de  condições escolhidas pelo usuário/programador.
+
+#Aplicar estruturas de decisão em problemas práticos e relacionados a neuroengenharia."
+3: Dentre as alternativas abaixo qual a que corresponde à principal vantagem de utilizar estruturas de decisão no contexto da neuroengenharia?
+A) Ao usarmos estruturas de decisão na neuroengenharia não é possível fazer aquisição em tempo real mas melhora a análise e processamento dos dados.
+B) A utilização de estruturas de decisão tornam a leitura do programa mais rápida.
+C) Possibilita criar um sistema adaptável com base no input dos dados neurais em tempo real, possibilitando maior flexbilidade de acordo com as características dos dados de entrada. #Correta#
+D) Estruturas de decisão facilitam a aquisição de informações em tempo real.
