@@ -27,4 +27,5 @@ Qual a necessidade de utilizar estruturas mais complexas?
 A) Para tomar decisões em situações complicadas, como quando muitas coisas estão acontecendo ao mesmo tempo ou quando há muitas regras a serem seguidas. 
 B) Para condensar a repetição necessária do código, assim, reduzindo chances de erros.
 C) Para tomar decisões simples em um código extenso sem nenhum comando anteriormente definido pelo programador
+
 R: A
