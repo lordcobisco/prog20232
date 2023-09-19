@@ -1,18 +1,30 @@
-Crie um exemplo de estruturas de decisão que poderia ser utilizada em um projeto de neuroengenharia 
-#Suponha que você tenha uma única amplitude de sinal EMG
+# Suponha que você tenha uma única amplitude de sinal EMG
 amplitude_emg = 0.8
-#Defina um limiar de amplitude para categorizar os dados
+# Defina um limiar de amplitude para categorizar os dados
 limiar = 1.0
-#Use uma estrutura de decisão para categorizar a amplitude 
+# Use uma estrutura de decisão para categorizar a amplitude 
 if amplitude_emg >= limiar: categoria = "Alta Atividade" 
 else: categoria = "Baixa Atividade"
-#Exiba a categoria da amplitude
+# Exiba a categoria da amplitude
 print("Categoria da Amplitude EMG:", categoria)
 
---> Na  saída de dados aparecerá que a categoria do sinal é de “Baixa atividade”.
+Em que categoria a amplitude de sinal EMG será classificada quando a amplitude_emg for 0.8 e o limiar for 1.0 de acordo com o código fornecido?
+
+A) Alta Atividade
+B) Baixa Atividade
+C) A categoria não pode ser determinada com base nas informações fornecidas.
+
+R: B
+
 
 Para que serve uma estrutura de decisão?
-R: Ela permite que o programa tome decisões com base em condições específicas, a partir do seu fluxo, executando diferentes blocos de código dependendo das condições. Desta forma, o programa reage a diferentes situações e executa ações que dependem de uma condicional.
+A) Para o programa tomar decisões específicas após um período de repetição de um comando.
+B) Para que uma condição se repita durante um determinado período de tempo.
+C) Para o programa tomar decisões com base em condições específicas, a partir do seu fluxo, executando diferentes blocos de código dependendo das condições. Desta forma, o programa reage a diferentes situações e executa ações que dependem de uma condicional.
+R: C
 
 Qual a necessidade de utilizar estruturas mais complexas?
-R: Usa-se estruturas de decisão mais complexas quando os programas precisam tomar decisões em situações complicadas, como quando muitas coisas estão acontecendo ao mesmo tempo ou quando há muitas regras a serem seguidas. Isso ajuda a tornar os programas mais capazes de lidar com situações diferentes.
+A) Para tomar decisões em situações complicadas, como quando muitas coisas estão acontecendo ao mesmo tempo ou quando há muitas regras a serem seguidas. 
+B) Para condensar a repetição necessária do código, assim, reduzindo chances de erros.
+C) Para tomar decisões simples em um código extenso sem nenhum comando anteriormente definido pelo programador
+R: A
