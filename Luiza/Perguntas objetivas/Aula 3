@@ -1,14 +1,36 @@
 Como funciona a ferramenta debug?
-R: Ela permite que os desenvolvedores pausem a execução do código em pontos específicos, examinem variáveis, controlem o fluxo do programa e visualizem informações úteis, tornando o processo de resolução de problemas mais eficiente e preciso. 
+A) Permite que os desenvolvedores pausem a execução do código em pontos específicos, examinem variáveis, controlem o fluxo do programa e visualizem informações úteis.
+B) Pausa o código assim que percebe um erro e corrige sem o auxílio do programador.
+C) Mostra o que falta para completar a sintaxe iniciada pelo programador
+D) Nenhuma das anteriores
+
+R: A
 
 Qual o intuito da função comentários no código Python?
-R: Comentários no código Python são usados para melhorar a legibilidade e a documentação, ajudam a explicar o propósito do código, esclarecem decisões, documentam funções e métodos e fornecem informações adicionais. Eles facilitam o entendimento do código.
+A) Serve para mudar a cor do comando colocado no código
+B) Melhora a legibilidade e a documentação do código, ajudam a explicar o propósito do código, esclarecem decisões, documentam funções e métodos e fornecem informações adicionais. Eles facilitam o entendimento do código.
+C) É um tipo de comando dentro da programação.
 
-Como você escolheria um ambiente de programação de Python de acordo com os recursos computacionais disponíveis para o desenvolvimento de interface humano-máquina?
-R: Levaria em consideração a potência de processamento e memória do computador a ser utilizados, bem como os requisitos específicos do projeto. Além disso, a plataforma alvo, a experiência pessoal, a disponibilidade de bibliotecas, a integração com outros sistemas, os custos e o desempenho são fatores importantes a serem avaliados para essa escolha, que deve equilibrar o desenvolvimento com a capacidade de atender aos objetivos da aplicação.
+R: B
 
-O que são operadores utilizados no Python? Cite alguns deles.
-R: São símbolos ou palavras-chave que permitem realizar operações em variáveis e valores. Eles são usados para executar cálculos, comparações, atribuições e outras ações em um programa. Alguns dos operadores mais comuns em Python incluem: Operadores Aritméticos, para realizar operações matemáticas, como adição (+), subtração (-), multiplicação (*), divisão (/), operadores Lógicos, como "and" (e), "or" (ou) e "not" (não), e de comparação, como diferente → (!=), maior  →  (>), menor  → (<), maior ou igual  → (>=) e menor ou igual  → (<=).
+Como você escolheria um ambiente de programação de Python levando em consideração os recursos computacionais disponíveis para o desenvolvimento de interface humano-máquina?
+A) Com base exclusivamente na plataforma alvo.
+B) Levando em consideração apenas a experiência pessoal.
+C) Avaliando apenas a disponibilidade de bibliotecas Python.
+D) Considerando a potência de processamento, memória, requisitos do projeto, plataforma alvo, experiência pessoal, disponibilidade de bibliotecas, integração com outros sistemas, custos e desempenho.
+
+R: D
+
+O que são operadores utilizados no Python? 
+A) São símbolos ou palavras-chave que permitem realizar operações em variáveis e valores. Eles são usados para executar cálculos, comparações, atribuições e outras ações em um programa. 
+B) São palavras-chaves que permitem a realização de operações específicas.
+C) São operadores aritméticos que realizam operações matemáticas.
+
+R: A
 
 Pra que serve comandos de entrada e saída em um código?
-R: Comandos de entrada serve para o recebimento de dados do ambiente externo, como o usuário, enquanto os de saída permitem que o programa exiba informações ou resultados.
+A) Os de entrada servem para o recebimento de dados do ambiente externo, enquanto os de saída permitem que o programa exiba informações ou resultados.
+B) Os de entrada permitem que o programa exiba informações ou resultados, enquanto os de saída permitem o recebimento de dados externos.
+C) Todos os dois exercem a mesma função, usar um ou outro dependerá do seu software e do que você deseja fazer.
+
+R: A
