@@ -1,0 +1,17 @@
+# Problema experimento com 
+# Coleta e processamento 
+#dados (entrada e saída)
+#tempo?
+#função
+def coletarDados(tempoexperimento,
+                 frequencia):
+    qtddados = tempoexperimento*frequencia 
+    #coleta
+    dado = []
+    for contador in range(qtddados):
+        dado.append(float(input()))
+    return dado  
+
+dadosEx1= coletarDados(1,1)
+dadosEx2= coletarDados(1,2)
+dadosEx3= coletarDados(1,10)
