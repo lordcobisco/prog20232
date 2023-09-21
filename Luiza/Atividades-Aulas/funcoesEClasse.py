@@ -27,5 +27,5 @@ tempo=1
 freq=1
 integral=integrar(dado=coletarDados(tempo,freq), freq)
 
-processar=integrar
-processar(coletarDados(tempo,freq), freq)
+processar={"int":integrar}
+processar["int"](coletarDados(tempo,freq), freq)
