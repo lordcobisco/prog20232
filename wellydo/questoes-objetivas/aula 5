@@ -1,0 +1,18 @@
+#Definir tipos de dados compostos como Tupla, Lista, Dicionário#
+1: Associe corretamente os elementos.
+A - Tupla            I - Coleções ordenadas e com elementos mutáveis.
+B - Lista            II - Coleções ordenadas com elementos que não se alteram.
+C - Dicionário       III - Coleções não ordenadas que são acessadas através dos pares chave-valor.
+
+A) A-II; B-I; C-III #Correta
+B) A-I; B-II; C-III
+C) A-III; B-I; C-II
+D) Nenhuma das alternativas.
+
+#Usar as estruturas básicas de programação com Listas, Tuplas e Dicionários#
+2: Qual a forma mais correta para acessar um elemento específico dentro de um dicionário?
+
+A) Usando índices numéricos.
+B) Utilizando a função .dic
+C) Através da sintaxe dicionario[chave desejada] #Correta
+D) Através do localizador do programa (e.g. CTRL+F)
