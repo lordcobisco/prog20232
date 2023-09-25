@@ -1,0 +1,259 @@
+#Descrição narrativa
+LOKOMAT:
+Início com a chegada do paciente
+Realize as medições da altura das pernas do paciente com uma trena 
+Quantifique seu peso 
+Coloque o colete na altura da cintura do paciente
+Aperte os cintos presentes na região abdominal e pélvica
+Suba a rampa do Lokomat com o paciente 
+Desça o apoio de suspensão do Lokomat até que chegue à altura dos ombros do paciente
+Encaixe os ganchos do apoio de suspensão no colete
+Enquanto o Lokomat não suspendê-lo da cadeira, não pare de subir os ganchos
+Feche a estrutura do Lokomat
+Aproxime a estrutura dos membros inferiores do paciente
+Aperte a estrutura nos quadris do paciente
+Aperte os cintos nos membros inferiores
+Confira se os ajustes realizados permitem a movimentação da perna
+Caso não, reajuste
+Senão for preciso, então, aperte os cintos do pé
+Início no computador
+Abra o software do LokoControl 
+Clique com o mouse em “training” 
+Clique com o mouse em “start position”
+Clique com o mouse em “start” para iniciar o treino
+Desça o paciente até que seus pés encostem na esteira
+Então, o treino de marcha será iniciado
+Se houver variações na altura do quadril durante o treino de marcha
+Então mostre ao paciente
+Enquanto o treino durar 
+Faça a demonstração dessas variações
+Fim do treino quando clicar em “stop”
+Caso seja necessária uma parada de emergência, aperte imediatamente no botão vermelho
+Aperte no controle do Lokomat para encerrar a movimentação dos membros inferiores
+Suspenda o paciente novamente
+Enquanto ele não desencostar os pés da esteira, continue
+Ao desencostar, abra a estrutura do Lokomat
+Solte os cintos do pé e da perna
+Suba a cadeira de rodas na rampa
+Aperte no controle para descer o paciente até que ele consiga sentar na cadeira de rodas
+Então, pare a descida
+Desencaixe os ganchos
+Desça com a cadeira da rampa
+Solte os cintos do abdome e pelve
+Retire o colete
+Fim.
+
+ZEROG:
+Início
+Coloque o colete na cintura do paciente
+Feche os cintos presentes na região abdominal e de membros inferiores
+Encaixe os ganchos do ZeroG no colete
+Ajuste os controles de queda, peso, movimento e rastreamento de queda no software do ZeroG
+Com todos os ajustes realizados, peça para o paciente caminhar
+Enquanto ele estiver sendo segurado pelo ZeroG deverá caminhar
+Caso o paciente não se sinta seguro para caminhar sozinho ou precise de ajuda
+Então, fique próximo a ele durante a caminhada
+Senão, apenas o acompanhe durante ela
+Caso o paciente ande rápido demais e perca o controle
+Então, aperte o controle de parada rápida e interrompa a caminhada
+Volte a ela assim que possível
+Caso seja necessário que o paciente desça do ZeroG imediatamente
+Aperte o botão de emergência
+Observe a evolução do paciente durante a caminhada
+Se ele estiver andando confortavelmente 
+Então, reduza o suporte fornecido pelo ZeroG
+Senão, aumente ou mantenha a mesma intensidade de suporte
+Ao encerrar o treino da caminhada, interrompa a ação do ZeroG
+Desencaixe os ganchos do colete
+Solte os cintos do colete
+Retire o colete
+Fim.
+
+#Memória, processamento, entrada/saída:
+LOKOMAT
+ChegadaPaciente (entrada)
+RealizarMedições (processamento)
+QuantificarPeso (processamento)
+ColocarColote (processamento)
+AperteCintos (processamento)
+SubirPacienteNaRampa (processamento)
+DesçaApoio (processamento)
+EncaixeGanchos (processamento)
+EnquantoPacienteNãoSubirNãoPareDeSubirGanchos (processamento)
+FecheLokomat (processamento)
+AproximeEstruturas (processamento)
+AperteEstrutura (processamento)
+AperteCintos (processamento)
+ConfiraSeAjustePermiteMovimentoDePerna (processamento)
+ReajusteSeNecessário (memória)
+AperteCintos (processamento)
+AbraSoftwareLokoMat (entrada)
+CliqueTraining (processamento)
+CliqueStartPosition (processamento)
+CliqueStart (processamento)
+DesçaPacienteAtéEsteira (processamento)
+TreinoDeMarchaIniciado (memória)
+MostrarVariaçõesDaAlturaDoQuadrilNaMarcha (memória)
+DemonstreVariaçõesAtéFinalizarOTreino (memória)
+FinalizarTreinoClicandoEmStop (memória)
+BotãoVermelhoEmParadasDeEmergência (memória)
+ControleEncerraMovimentação (saída)
+SuspendaPaciente (processamento)
+ContinueAtéDesencostarPéDaEsteira (processamento)
+AbraLokomat (processamento)
+SolteCintos (processamento)
+SubaCadeiraDeRodas (processamento)
+DesçaPacienteAtéCadeira (processamento)
+PareDescidaQuandoPacienteSentar (processamento)
+DesencaixeGanchos (processamento)
+DesçaCadeiraDaRampa (processamento)
+SolteCintosAbdomeEPelve (processamento)
+RetireColete (saída).
+Fim.
+
+ZEROG:
+Início
+ColoqueColete (entrada)
+EncaixeOsGanchos (entrada)
+LigueZeroG (processamento
+AjusteControles (processamento)
+AjustesRealizados (memória)
+EnquantoEstiverSegurado (memória)
+FiquePróximo (memória)
+ApenasAcompanhe (memória)
+CasoAndeRápidoEPercaControle (memória)
+AperteControleParadaRápida (processamento)
+VolteAEla (processamento)
+CasoNecessárioDescerDoZeroGImediatamente (memória)
+AperteBotãoDeEmergência (processamento)
+ObserveEvolução (processamento)
+SeAndandoConfortavelmente (memória)
+ReduzaSuporte (processamento)
+ReduzaSuporte (processamento)
+InterrompaZeroG (processamento)
+DesencaixeOsGanchos (saída)
+SolteCinto (saída)
+RetireColete (saída)
+Fim.
+
+#Destacar o que seriam as estruturas de repetição e de decisão:
+Estruturas de repetição - LOKOMAT:
+Aperte os cintos presentes na região abdominal e pélvica ATÉ QUE esteja apertado o suficiente
+ENQUANTO o Lokomat não suspendê-lo da cadeira, NÃO PARE de subir os ganchos
+ENQUANTO o treino durar 
+DEMONSTRE essas variações
+ENQUANTO ele não desencostar os pés da esteira, CONTINUE
+Aperte no controle para descer o paciente ATÉ QUE ele consiga sentar na cadeira de rodas
+Quando sentar, PARE a descida
+
+Estruturas de decisão - LOKOMAT:
+Confira se os ajustes realizados permitem a movimentação da perna
+CASO NÃO, reajuste
+SENÃO for preciso, ENTÃO, aperte os cintos do pé
+SE houver variações na altura do quadril durante o treino de marcha
+ENTÃO, mostre ao paciente
+CASO seja necessária uma parada de emergência, ENTÃO aperte imediatamente no botão vermelho
+
+Estruturas de repetição - ZEROG
+Aperte os cintos presentes na região abdominal e de membros inferiores ATÉ QUE esteja apertado o suficiente
+ENQUANTO ele estiver sendo segurado pelo ZeroG DEVERÁ caminhar
+
+Estruturas de decisão - ZEROG
+CASO o paciente não se sinta seguro para caminhar sozinho ou precise de ajuda
+ENTÃO, fique próximo a ele durante a caminhada
+SENÃO, apenas o acompanhe durante ela
+CASO o paciente ande rápido demais e perca o controle
+ENTÃO, aperte o controle de parada rápida e interrompa a caminhada
+SE ele estiver andando confortavelmente 
+ENTÃO, reduza o suporte fornecido pelo ZeroG
+SENÃO, aumente ou mantenha a mesma intensidade de suporte
+
+#Diagrama de blocos
+PSEUDOCÓDIGO - LOKOMAT
+Algoritmo treinamentoLokomat
+Var
+   alturaPernas, pesoPaciente: real
+   cintoAjustado: lógico
+   variaçõesQuadril: lógico
+   pacienteSuspendido: lógico
+  treinoEmAndamento:lógico
+Início
+Escreva Informe a altura das pernas
+Leia alturaPernas
+Escreva Informe o peso do paciente
+Leia pesoPaciente
+Escreva Coloque o colete na altura da cintura do paciente
+Escreva Aperte os cintos presentes na região abdominal e pélvica
+Escreva Suba a rampa do Lokomat com o paciente 
+Escreva Desça o apoio de suspensão do Lokomat 
+Escreva Desça o apoio de suspensão do Lokomat até que chegue à altura dos ombros do paciente
+Escreva Encaixe os ganchos do apoio de suspensão no colete
+Escreva Feche a estrutura do Lokomat
+Escreva Aproxime a estrutura dos membros inferiores do paciente
+Escreva Aperte a estrutura nos quadris do paciente
+Escreva Aperte os cintos nos membros inferiores
+Escreva Os ajustes realizados permitem a movimentação da perna?
+Leia estadoAjustes
+Enquanto estadoAjustes  = falso faça
+Escreva Aperte os cintos do pé
+Escreva Todos os ajustes necessários foram realizados?
+Leia estadoAjustes
+Escreva clique nas definições do treino de marcha
+Escreva encoste os pés do paciente na esteira
+Se houver variações na altura do quadril durante o treino de marcha
+Então mostre ao paciente
+Enquanto variaçõesQuadril = true faça
+Escreva demonstre as variações
+Fim_se clicar em “stop”
+Se necessário uma parada de emergência
+Então aperte imediatamente no botão vermelho
+Escreva Aperte no controle do Lokomat para encerrar a movimentação dos membros inferiores
+Se  treinoEmAndamento <- falso
+Escreva treinoFinalizado
+Escreva desencaixe os ganchos
+Escreva solte os cintos
+Escreva retire o colete
+Fim.
+
+PSEUDOCÓDIGO - ZEROG
+
+Algoritmo treinamentoZeroG
+Var
+controleQueda, controlePeso, ajustesMovimento, rastreamentoQueda: real
+estadoAjustes: lógico
+pacienteZeroG: lógico
+andarConfortavelmente: lógico
+treinoEmAndamento : lógico
+treinoFinalizado: lógico
+
+
+Início
+Escreva Coloque o colete na cintura do paciente
+Escreva Feche os cintos presentes na região abdominal e de membros inferiores
+Escreva Encaixe os ganchos do ZeroG no colete
+Escreva Informe ajustes de controle de queda
+Leia controleQueda
+Escreva Informe ajustes de peso
+Leia controlePeso
+Escreva ajustes de movimento e rastreamento de queda
+Leia ajustesMovimento
+Escreva rastreamento de queda
+Leia rastreamentoQueda
+Escreva Todos os ajustes foram realizados corretamente?
+Leia estadoAjustes
+Enquanto estadoAjustes  = falso faça
+Escreva Peça para o paciente caminhar
+Enquanto pacienteZeroG = true faça caminhar
+Caso O paciente não se sinta seguro para caminhar sozinho ou precise de ajuda
+Então fique próximo a ele durante a caminhada
+Senão apenas o acompanhe durante ela
+Caso o paciente ande rápido demais e perca o controle
+Então aperte o controle de parada rápida e interrompa a caminhada
+Se necessário que o paciente desça do ZeroG imediatamente
+Então Aperte o botão de emergência
+Enquanto andarConfortavelmente = true faça redução do suporte da caminhada
+Se  treinoEmAndamento <- falso
+Escreva treinoFinalizado
+Escreva Desencaixe os ganchos e solte os cintos do colete
+Escreva Retire o colete
+Fim.
