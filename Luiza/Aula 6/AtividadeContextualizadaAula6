@@ -1,0 +1,108 @@
+#Início da cirúrgia
+print ("Vamos iniciar a cirurgia.")
+print ("Primeiro, vamos anestesiar o animal. Você pode escolher entre os fármacos Ketamina e Xilazin que serão utilizados em conjunto com o halotano.")
+
+DosagensAnestesia={
+"ketamina": 90,             #mg por 1kg
+"xilazina": 10,             #mg por 1kg
+"ketamina + xilazina": 110, #mg por 1kg
+"halotanoG": 2,             #Porcentagem 
+}
+
+anestesiaEscolhida = input("Qual anestesia você escolhe?")
+pesoAnimal = input("Informe o peso do animal.")
+if anestesiaEscolhida in DosagensAnestesia:
+    dosagemAnimal = DosagensAnestesia[anestesiaEscolhida]
+    quantidade = dosagemAnimal*pesoAnimal
+    print(f"Para um animal de {pesoAnimal} kg, é necessária {quantidade} mg de {anestesiaEscolhida}.")
+else:
+    print("A anestesia não foi reconhecida pelo programa.")
+
+AnestesicoEfeito = "True"
+if AnestesicoEfeito:
+    positivo = input("O anestesico fez efeito?")
+    if positivo == "sim":
+        print ("Posicione o animal no estereotáxico e deixe as barras que suportam o seu peso posicionadas no ouvido externo.")
+else:
+    print("Espere mais um pouco pelo efeito da anestesia.")
+
+AngulacaoCabeça = True
+while AngulacaoCabeça:
+    semDiferenças = input("Há diferenças de angulação entre o bregma e o lambda do animal? (Sim ou Não): ")
+    if semDiferenças.lower() == "sim":
+        print("Ajuste a angulação.")
+    else:
+        AngulacaoCabeça = False 
+        print("Vá para a próxima etapa.")
+
+ap_base = float(input("Informe o valor da medida AnteroPosterior (AP) base (em cm): "))
+ll_base = float(input("Informe o valor da medida LateroLateral (LL) base (em cm): "))
+dv_base = float(input("Informe o valor da medida DorsoVentral (DV) base (em cm): "))
+
+ajuste_ap = float(input("Informe o valor de ajuste para AP (em cm): "))
+ajuste_ll = float(input("Informe o valor de ajuste para LL (em cm): "))
+ajuste_dv = float(input("Informe o valor de ajuste para DV (em cm): "))
+
+# Calcula e exibe as medidas ajustadas
+ap_ajustado = ap_base - ajuste_ap
+ll_ajustado_menor = ll_base - ajuste_ll
+ll_ajustado_maior = ll_base + ajuste_ll
+dv_ajustado = dv_base - ajuste_dv
+
+print(f"\nPosicione a agulha sobre o bregma.")
+print(f"AP ajustado: {ap_ajustado} cm")
+print(f"LL (+/-): {ll_ajustado_menor} cm / {ll_ajustado_maior} cm (BILATERAL)")
+print(f"DV ajustado: {dv_ajustado} cm")
+
+continuar = input("Deseja continuar para a próxima etapa? (Sim ou Não): ").lower()
+if continuar == "sim":
+    print("Os cálculos foram realizados. Localize os pontos de inserção das cânulas-guia de acordo com os resultados e faça os furos.")
+else:
+    print("Procedimento interrompido.")
+
+perfuracaoSucedida = input("A perfuração das meninges foi bem-sucedida? (Sim ou Não): ").lower()
+if perfuracaoSucedida == "sim":
+    print("Faça um furo com a broca até alcançar as meninges.")
+else:
+    print("A perfuração das meninges não foi bem-sucedida. Revise o procedimento e tente novamente conforme necessário.")
+#MUDANÇAS
+print ("Agora, introduza a cânula-guia até o valor DorsoVentral que foi calculado anteriormente.")
+print ("Drene qualquer sangue ou líquido cefalorraquidiano que esteja saindo pelo orifício criado no crânio. Utilize pequenos rolos de papel absorvente.")
+
+print("Agora, faça um capacete que proteja o crânio, a cânula-guia e o parafuso.")
+print ("Deseja confeccionar o capacete?")
+Capacete = True
+if Capacete:
+     Confeccionar = input(" Digite sim ou não.")
+     if Confeccionar == "sim":
+          print("Faça uma mistura do acrílico polimerizante com o solvente até ficar com textura espessa porém maleável.")
+else:
+     print("Procedimento interrompido.")
+
+print("Agora, o próximo passo é a fixação da outra cânula-guia.")
+canalGuiaProfundidade = 0.00  # Profundidade inicial
+canulaGuia = "Ponto B"
+dvAlvo = 4.00
+while canalGuiaProfundidade < dvAlvo:
+    print("Continue tentando.")
+    canalGuiaProfundidade += 4
+print("Cânula-guia fixada.")
+
+print("Faça uma nova drenagem de qualquer sangue ou líquido cefalorraquidiano que esteja saindo pelo orifício criado no crânio.")
+print("Agora, faça um novo capacete. Desta vez, espalhe o cimento sobre a maior área do crânio, deixando um espaço entre o capacete e o início da área tecidual.")
+Confeccao = True
+if Confeccao: 
+     Terminou = input("Terminou a confecção?")
+     if Terminou == "sim":
+         print("Agora, levante devagar e acomode o animal em uma caixa aquecida por uma lâmpada. Quando ele acordar, cololoque em sua moradia.")
+     else:
+      print("Finalize a confecção.")
+
+#Última etapa
+animal_acordou = False
+while not animal_acordou:
+    print("Aguardando o animal despertar...")
+    animal_acordou = True
+print("Animal despertou. Colocando-o de volta em sua caixa-moradia.")
+
+print ("Fim de procedimento cirúrgico.")
