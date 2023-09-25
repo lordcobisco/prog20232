@@ -37,7 +37,7 @@ while AtivacaoEletrodo == 'sim':
         if turn_on != 'sim':
             break
         else:
-            print("Escolha um de 1 a 32, mas desconsidere o canal já acionado.")
+            print("Escolha um canal de 1 a 32, mas desconsidere o canal já acionado.")
 
 execution_time = time.time() - t
 print("O tempo de execução do programa foi o total de ", execution_time)
