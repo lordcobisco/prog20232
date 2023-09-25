@@ -1,0 +1,45 @@
+import time
+
+print("Dispositivo de Optogenética.")
+começar = input("Seja bem-vindo! Deseja iniciar o programa? Digite 'sim' ou 'não'.")
+if começar == "sim":
+     print ("Inicializando.")
+     começar = True
+else:
+    print ("Ok! Até breve.")
+    começar = False
+
+class LED_RGB:
+    def LED(v):
+        V = float(v)
+        if(v == 1):   
+            cor = led[0]
+        elif(v == 2):
+            cor = led[1]
+        else:
+            cor = led[2]
+            return cor
+
+if começar == 'Sim':
+    led = (('V', 1), ('Vr',2), ('A',3)) # valores fícticios para se referir a cada cor
+    eletrodo = []
+    canal = int(input("Você pode escolher acionar um eletrodo de 1 a 32. Digite o número referente a sua escolha."))
+    for i in range (1,32):
+        eletrodo.insert(i, canal)
+
+AtivacaoEletrodo = input("Deseja ativar o canal? Digite 'sim' ou 'não'" )
+while AtivacaoEletrodo == 'sim':
+   if 1 <= canal <= 32:
+        v = input("Informe qual a intensidade do canal escolhido: 2V, 3V ou 4V.")
+        ledDispositivo = canal(v)
+        print('O LED que está ligado é o', ledDispositivo, 'do canal', canal)
+        turn_on = input("Deseja acionar outro canal? Digite 'sim' ou 'não'. ")
+        if turn_on != 'sim':
+            break
+        else:
+            print("Escolha um de 1 a 32, mas desconsidere o canal já acionado.")
+
+execution_time = time.time() - t
+print("O tempo de execução do programa foi o total de ", execution_time)
+
+print("Fim da execução.")
