@@ -1,0 +1,45 @@
+Algoritmo TreinoZeroG
+  Var
+    paciente: Literal
+    profissional: Literal
+    suporteSuspensaoConectado: Booleano
+    suporteSuspensaoInstalado: Booleano
+    suporteSuspensaoAjustado: Booleano
+    finalizaMovimento: Booleano
+    iniciaMovimento: Booleano
+
+  Início
+    Escreva "ZeroG®"
+    Escreva "Suporte de suspensão é instalado no paciente"
+    Escreva "Profissional ajusta suporte de suspensão ao corpo do paciente"
+
+    Se suporteSuspensaoAjustado Então
+      Escreva "O suporte de suspensão está ajustado, o profissional segue para a próxima etapa"
+    Senão
+      Escreva "O suporte não está ajustado, o profissional realiza um novo ajuste"
+    Fim Se
+
+    Escreva "Profissional conecta suporte de suspensão ao trilho do equipamento ZeroG"
+
+    Enquanto suporteSuspensaoConectado E iniciaMovimento Faça
+      Escreva "O suporte de suspensão está conectado ao trilho do equipamento ZeroG"
+      Escreva "Profissional inicia o treinamento no tablet"
+      Escreva "Profissional acompanha treinamento via tablet"
+      Escreva "Profissional ajusta direção via tablet"
+      Escreva "Profissional ajusta suporte de peso corporal via tablet"
+
+      Se profissional inicia movimento para frente Então
+        Escreva "O ZeroG inicia o movimento do paciente para frente"
+      Senão
+        Se profissional inicia movimento para trás Então
+          Escreva "O ZeroG inicia o movimento do paciente para trás"
+        Senão
+          Escreva "Profissional parou o movimento, o ZeroG para o movimento do trilho"
+        Fim Se
+      Fim Se
+
+    Fim Enquanto
+
+    Escreva "Ao finalizar o treino, o paciente é retirado do equipamento"
+
+  Fim

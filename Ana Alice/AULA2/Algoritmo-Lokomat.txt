@@ -1,0 +1,63 @@
+Algoritmo Lokomat
+  Var
+    paciente: Literal
+    profissional: Literal
+    suporteSuspensaoConectado: Booleano
+    suporteSuspensaoInstalado: Booleano
+    suporteSuspensaoAjustado: Booleano
+    finalizaMovimento: Booleano
+    iniciaMovimento: Booleano
+
+  Início
+    Leia profissional
+    Leia paciente
+
+    Escreva "Paciente chegou à clínica para treino locomotor"
+    Escreva "Profissional coleta as medidas das pernas do paciente"
+    Escreva "Profissional inicia instalação de colete de suporte"
+
+    Se suporteSuspensaoAjustado = Falso Então
+      Escreva "Profissional ajusta o colete"
+    Fim Se
+
+    Se suporteSuspensaoAjustado = Verdadeiro Então
+      Escreva "Profissional guia paciente à máquina Lokomat"
+    Fim Se
+
+    Escreva "Ao chegar à máquina, o colete é conectado ao suporte da máquina para suspensão do paciente"
+
+    Se suporteSuspensaoAjustado = Verdadeiro Então
+      Escreva "Com paciente suspenso, profissional recolhe a cadeira de rodas"
+      Escreva "Profissional faz alinhamento da máquina ao corpo do paciente"
+
+      Se suporteSuspensaoInstalado = Verdadeiro Então
+        Escreva "Se o equipamento está alinhado, o paciente é fixado ao aparelho"
+      Senão
+        Escreva "Se o equipamento não está alinhado, o profissional realiza novo ajuste"
+      Fim Se
+
+      Escreva "Profissional define velocidade da marcha"
+      Escreva "Profissional inicia o posicionamento dos membros inferiores"
+      Escreva "Profissional inicia o treino"
+
+      Enquanto iniciaMovimento = Verdadeiro Faça
+        Escreva "Enquanto o treino está iniciado, a esteira se movimenta"
+      Fim Enquanto
+
+      Escreva "Profissional baixa suporte via controle remoto"
+
+      Enquanto finalizaMovimento = Verdadeiro Faça
+        Escreva "Enquanto a atividade está sendo executada, o suporte está abaixado e os dados são exibidos no monitor"
+      Fim Enquanto
+
+    Fim Se
+
+    Escreva "Ao finalizar o treino, a esteira é paralisada"
+
+    Se finalizaMovimento = Verdadeiro Então
+      Escreva "Se o treino foi finalizado, o suporte fica suspenso"
+    Fim Se
+Fim
+
+    Escreva "Quando o suporte é suspenso, o paciente pode ser removido do equipamento"
+  Fim
