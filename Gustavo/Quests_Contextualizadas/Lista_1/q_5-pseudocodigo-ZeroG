@@ -1,0 +1,92 @@
+Algoritmo ReabilitacaoComZeroG
+Var
+    nomePaciente: Literal
+    pesoPaciente, alturaPaciente: Real
+    cadeirante, confortoColete, travadoTorax, travadoCoxas, equipamentoLigado, playStopCaminhada: Lógico
+    qtdAlcas: Inteiro
+    alturaAlcas, frequenciaPassada: Real
+
+Função Comprimentar(nome: Literal)
+    Escreva "Cumprimentar o paciente " + nome
+Fim Função
+
+Função ColetarDados(var peso, altura: Real; var cadeirante: Lógico)
+    Escreva "Digite o peso do paciente:"
+    Leia peso
+    Escreva "Digite a altura do paciente:"
+    Leia altura
+    Escreva "O paciente é cadeirante? (S para Sim / N para Não):"
+    Leia cadeirante
+Fim Função
+
+Função PosicionarColete()
+    Escreva "Posicionar o colete no paciente"
+    return confortoColete
+Fim Função
+
+Função TravarAlçasColete()
+    Escreva "Travar as alças do colete no tórax do paciente"
+    return travadoTorax
+Fim Função
+
+Função TravarAlçasCoxas()
+    Escreva "Travar as alças do colete entre as coxas do paciente"
+    return travadoCoxas
+Fim Função
+
+Função PosicionarPaciente()
+    Escreva "Posicionar o paciente no zeroG"
+Fim Função
+
+Função AjutarAuxilioPaciente(altura: Real)
+    Escreva "Ajustar a altura das alças para " + altura + " metros"
+Fim Função
+
+Função ValidarMovimentoPaciente()
+    Escreva "Validar o movimento do paciente"
+Fim Função
+
+Função AtivarAparelho(playStopCaminhada: Lógico)
+    Se playStopCaminhada = Verdadeiro Então
+        Escreva "Ativar o aparelho de caminhada no zeroG"
+    Senão
+        Escreva "Desativar o aparelho de caminhada no zeroG"
+    Fim_se
+    return equipamentoLigado
+Fim Função
+
+Função ConfigPassada(frequencia: Real)
+    Escreva "Configurar a frequência da passada para " + frequencia + " passos por minuto no zeroG"
+Fim Função
+
+Inicio
+    Comprimentar(nomePaciente)
+    ColetarDados(pesoPaciente, alturaPaciente, cadeirante)
+    
+    PosicionarColete()
+    Repita enquanto qtdAlcas > 0 Faça
+        TravarAlçasColete()
+        TravarAlçasCoxas()
+        qtdAlcas <- qtdAlcas - 1
+    Fim_repita
+    
+    PosicionarPaciente()
+    
+    Escreva "Levar o paciente para a esteira do zeroG"
+    Escreva "Através de um controle, descer as travas que irão levantar o paciente"
+    Escreva "Encaixar as alças do colete do paciente nas travas do zeroG"
+    Escreva "Com o mesmo controle do aparelho, subir as travas e levantar o paciente"
+
+    Se cadeirante = Verdadeiro E confortoColete = Verdadeiro Então
+        Escreva "Tirar a cadeira de rodas"
+    Senão Se confortoColete = Verdadeiro Então
+        Escreva "Parar de levantar o paciente"
+    Senão
+        Escreva "Continuar levantando o paciente através do controle"
+    Fim_se
+
+    Escreva "Verificar se a amplitude do movimento da perna do paciente está aceitável"
+
+    Escreva "Ir no computador / tablet vinculado ao zeroG e configurar a altura das alças"
+    Escreva "Determinar a velocidade da alça pelo caminho que será percorrido pelo paciente através da passada"
+Fim
