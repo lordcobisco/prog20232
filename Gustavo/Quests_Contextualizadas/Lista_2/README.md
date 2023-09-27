@@ -1,6 +1,6 @@
 # Software Lokomat
 
-![Lokomat](lokomat.jpg)
+![Lokomat](Lokomat.jpg)
 
 Tarefa referente a lista contextualizada 2:
 
