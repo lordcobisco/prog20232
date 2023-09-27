@@ -23,13 +23,13 @@
 ### D (  ) - Python requer um supercomputador para ser executado de forma eficaz.
 ### E (  ) - Python pode ser executado em qualquer computador sem requisitos especiais.
 
-## 3 - Marque a alternativa que cita uma boa prática recomendada de gerenciamento de código e colaboração em equipe ao trabalhar em projetos de neuroengenharia em um repositório Git?
+## 3 - quais são os comandos de entrada e saida da linguagem Python?
 
-### A ( ) - Usar branches para cada alteração no sistema
-### B ( ) - Realizar commits regulares com mensagens descritivas
-### C ( ) - Documentar no final do desenvolvimento do projeto
-### D ( ) - Modificar o código de colegas sem permissão.
-### E ( ) - O proprio desenvolvedor fazer o merge de suas alterações com o sistema principal
+### A ( ) - Int e Float
+### B ( ) - .min() e .max()
+### C ( ) - Git add. e Git init
+### D ( ) - input[] e print[]
+### E ( ) - input() e print()
 
 ## 4 - Qual é a finalidade dos comentários em Python e como eles são reconhecidos?
 
@@ -46,3 +46,11 @@
 ### C ( ) -  Use um IDE como PyCharm ou VS Code para definir pontos de interrupção e inspecionar variáveis durante a execução.
 ### D ( ) -  Use um navegador da web para depurar código Python.
 ### E ( ) -  Execute o código Python em uma máquina virtual isolada para depuração.
+
+Gabarito:
+
+* 1 - B
+* 2 - B
+* 3 - E
+* 4 - B
+* 5 - C
