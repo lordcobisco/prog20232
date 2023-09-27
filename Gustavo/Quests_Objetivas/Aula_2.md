@@ -38,3 +38,11 @@
 ### C ( ) - Isolar e gerenciar diferentes linhas de desenvolvimento de forma independente.
 ### D ( ) - Acelerar o processo de merge de todas as alterações no sistema principal.
 ### E ( ) - Exigir que os desenvolvedores criem repositórios separados para cada funcionalidade.
+
+
+Gabarito:
+
+* 1 - E
+* 2 - B
+* 3 - B
+* 4 - C
