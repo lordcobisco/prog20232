@@ -39,10 +39,19 @@
 ### D (  ) - A principal maneira de se armazenar uma informação em uma variável.
 ### E (  ) - Termo utilizado para referenciar variáveis, funções ou vários outros objetos.
 
-## 5 - Quais dessas linguagens é de Alto nivel?
+## 5 - Quais dessas linguagens é de Baixo nivel?
 
 ### A (  ) - Pascal
 ### B (  ) - Fortran
 ### C (  ) - Basic
 ### D (  ) - Assembly
 ### E (  ) - Rust
+
+
+Gabarito:
+
+* 1 - C
+* 2 - D
+* 3 - D
+* 4 - E
+* 5 - D
