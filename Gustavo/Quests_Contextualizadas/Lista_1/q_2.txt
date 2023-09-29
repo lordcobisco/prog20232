@@ -19,8 +19,8 @@ Lokomat:
         
   2. Processamento (Funções):
       - Comprimentar(nomePaciente)
-      - ColetarDados(pesoPaciente, alturaPaciente, cadeirante, comprimentoCoxa)
-      - PosicionarColete()
+      - ColetarDados()
+      - PosicionarColete(posicaoSeta)
           return confortoColete
       - TravarAlçasColete()
           return travado
