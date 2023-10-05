@@ -1,0 +1,9 @@
+AcabouPrograma = False
+while not AcabouPrograma:
+    AcabouPrograma = (input() == 'x')
+    pass
+while True: 
+    if input() == "x":
+        break
+    pass
+print("acabou programa")

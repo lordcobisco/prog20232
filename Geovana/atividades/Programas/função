@@ -1,0 +1,41 @@
+# Problema experimento com 
+# Coleta e processamento 
+#dados (entrada e saída)
+#tempo?
+#função
+def coletarDados(tempoexperimento,frequencia):
+    """
+    Esta função foi feita para coletar dados do sensor
+    """
+    qtddados = tempoexperimento*frequencia 
+    #coleta
+    dado = []
+    for contador in range(qtddados):
+        dado.append(float(input()))
+    return dado  
+
+dadosEx1= coletarDados(1,1)
+dadosEx2= coletarDados(1,2)
+dadosEx3= coletarDados(1,10)
+    
+#tempoexperimento = 1 #s 
+#frequencia = 10 #hz 
+#print(qtddados)
+#coleta 
+# dado =[]
+# for contador in range(qtddados):
+#     dado.append(float(input()))
+# #dado = [89127, 1298, 902, 3097, 356]
+# soma = dado[0]+dado[1]+dado[2]+dado[3]
+# print(soma)
+
+def integrar(dado,frequencia):
+    soma = 0
+    for data in dado:
+        soma = soma + (1/ frequencia) * data
+    return soma
+
+tempo=1
+freq=1
+dadosEx1= coletarDados(tempo, freq)
+integral= integrar(dadosEx1, freq)

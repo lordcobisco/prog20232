@@ -1,0 +1,49 @@
+#habituação
+habituação= int(input("O animal está habituado?: Digite 1 para o sim e 0 para não."))
+while habituação == 1 :
+   print("Iniciar experimento")
+   break
+else:
+   print("O animal precisa está habituado")
+
+
+#Regime de aproximações sucessivas
+posição_atual=0
+aproximação=30
+for aproximação in range(0,31):
+   aproximação != posição_atual
+   print("A posição atual é:", aproximação)
+   if aproximação <= 30:
+       print("liberar 0,5ml de rec")
+   else:
+       print("Não liberar nada")
+#Se animal tocou na barra 20x, retornar que o experimento passou para a próxima etapa
+
+tocar_na_barra= int(input("Quantas vezes o animal tocou na barra?"))
+while tocar_na_barra >=20:
+   print("Passe para proxima etapa")
+   break
+else:
+   print("Não passe para proxima fase")
+#Emissão do som1 ou som 2 e toque na barra esquerda ou direita
+etapa2=input("Qual som e qual barra o animal tocou?")
+som1 = ("animal tocou na barra esquerda")
+som2= ("animal tocou na barra direita")
+while etapa2 == "som1" :
+   print("liberar 0,5ml de rec o", som1)
+   break
+while etapa2 == "som2":
+   print("liberar 0,5ml de rec o",som2)
+   break
+else:
+    print("Não liberar nada")
+
+# experiemento completo
+
+experimento=int(input("Quantas vezes foi realizado o experimento?")) #vezes
+tempo=int(input("Quanto tempo tem o experimento?")) #min
+while experimento == 50 and tempo== 30:
+    print("o experimento seguirá para a próxima fase")
+    break
+else:
+   print("Não ir para proxima fase")
