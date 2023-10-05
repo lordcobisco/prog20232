@@ -1,0 +1,11 @@
+1) Quais das seguintes estruturas podem conter valores mutáveis?
+a. Tupla e lista
+b. Tupla e dicionário
+c. Lista e dicionário
+d. Estruturas sequenciais.
+2) Marque a verdadeira:
+a. O que determinam listas são chaves, tuplas são colchetes e dicionários são parênteses.
+b. É possível inserir valores de listas dentro de dicionários.
+c. Tuplas não permitem fatiamento.
+d. Operações como remove e append não podem ser repetidas com essas estruturas.
+
