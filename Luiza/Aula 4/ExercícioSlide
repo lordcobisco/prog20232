@@ -62,3 +62,27 @@ elif experiment_count < 50:
     print("Ainda é necessário realizar mais experimentos.")
 else:
     print("Tempo limite excedido, o experimento não pode continuar.")
+
+
+#ATUALIZAÇÃO - ESTRUTURA DE REPETIÇÃO
+experiment_count = 0
+elapsed_time_minutes = 0
+
+while experiment_count < 50 and elapsed_time_minutes <= 30:
+    habituado = True
+    variavel_aproximacao = 30
+    if animal_aproximou:
+        liberar_rec(0.5)
+    if toques_na_barra >= 20:
+        print("O experimento passou para a próxima etapa.")
+    if som_emitido == som1 and toque_na_barra == "esquerda":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+    if som_emitido == som2 and toque_na_barra == "direita":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+    experiment_count += 1
+    elapsed_time_minutes += 1
+print("O experimento seguirá para a próxima fase.")
