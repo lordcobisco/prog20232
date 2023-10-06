@@ -1,7 +1,9 @@
-tempoExperimento = 1 #s
+tempoExperimento = 1 #S
 frequenciaSensor = 10 #Hz
-qtdDados = tempoExperimento*frequenciaSensor
-#coleta
+quantidadedeDados = tempoExperimento*frequenciaSensor
+# coleta
 dado = []
-for contador in range (qtdDados):
+for contador in range(quantidadedeDados) :
     dado.append(float(input()))
+
+print(dado)
