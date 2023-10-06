@@ -86,3 +86,51 @@ while experiment_count < 50 and elapsed_time_minutes <= 30:
     experiment_count += 1
     elapsed_time_minutes += 1
 print("O experimento seguirá para a próxima fase.")
+
+#ATUALIZAÇÃO - FUNÇÕES
+# Função para verificar se o animal está habituado
+def verificar_habituacao():
+    return True  # Lógica para verificar a habituação do animal
+
+# Função para liberar rec
+def liberar_rec(quantidade):
+    # Lógica para liberar a quantidade especificada de rec
+    pass
+
+# Função para realizar um experimento
+def realizar_experimento():
+    global toques_na_barra
+    global som_emitido
+    global toque_na_barra
+
+    variavel_aproximacao = 30
+
+    if verificar_habituacao():
+        variavel_aproximacao = 30
+
+    if animal_aproximou:
+        liberar_rec(0.5)
+
+    if toques_na_barra >= 20:
+        print("O experimento passou para a próxima etapa.")
+
+    if som_emitido == som1 and toque_na_barra == "esquerda":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+
+    if som_emitido == som2 and toque_na_barra == "direita":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+
+# Fluxo principal do programa
+experiment_count = 0
+elapsed_time_minutes = 0
+
+while experiment_count < 50 and elapsed_time_minutes <= 30:
+    realizar_experimento()
+    experiment_count += 1
+    elapsed_time_minutes += 1
+
+print("O experimento seguirá para a próxima fase.")
