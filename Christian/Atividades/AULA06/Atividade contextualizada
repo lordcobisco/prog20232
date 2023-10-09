@@ -1,0 +1,162 @@
+# Programa para automatizar procedimento cirurgico
+print("Bem vindo ao programa de automatização do procedimento cirurgico")
+
+#Entradas
+tupla_anestesicos=('Ketamina','Xilazina','Haltono')
+print("Anestesicos disposniveis:",tupla_anestesicos)
+anestesico=(int(input("Escolha o farmaco para anestesia [0] Ketamina, [1] Xilazina, [2] Haltono:" )))
+peso_animal=(float(input("Insira o peso do animal kg:" )))
+dose=(float(input("Insira a dose ml/kg:" )))
+print("Animal sedado")
+
+
+posicionamento_animal = 0
+
+while True:
+    poscionamento_animal=int(input("O Animal está poscionado no esterotáxico 1=SIM 2=NÃO:" ))
+    
+    if poscionamento_animal == 1:
+        print("Animal poscionado")
+        break
+    else:
+        print("Poscione o animal no esterotáxico")
+    
+
+poscionamento_barras= 0
+
+while True :
+    poscionamento_barras= int(input("Para poscionar as barras de suporte no animal 1=POSICIONAR 2=NÃO POSICIONAR:" ))
+    if poscionamento_barras == 1:
+         print("Barra de poscionamentos ajustadas")
+         print("OBS-Verificar se animal piscou")
+         break
+    else:
+        print("Posicione as barras de suporte")
+
+
+angulacao_cabeca=0
+
+while True:
+    angulação_cabeça=int(input(" A angulação da cabeça esta sem diferenças de angulação entre o bregma e o lambda 1=SIM 2=NÃO:"))
+    if angulação_cabeça == 1:
+        print("Angulação correta")
+        break
+    else:
+        print("Poscione a cabeça novamente")
+
+Limpeza=0
+
+while True:
+    Limpeza= int(input("Limpeza da região do procedimento 1=INICIAR 2=NÃO INICIAR:" ))
+    if Limpeza == 1:
+      print("Limpando pelagem calota craniana")
+      print("Retirando tecidos molespelagem calota craniana (epiderme,derme e tecido conjuntivo) ")
+      print("Limpando de qualquer resto de “pele” que esteja sobrando utilizando (H 2 O 2) 10 volumes")
+      print("Limpeza realizada")
+      break
+    else:
+      print("É necessário realizar a limpeza da região")
+
+camada_poliacrilato=0
+
+while True:
+    camada_poliacrilato= int(input("Aplicar camada de poliacrilato 1=SIM 2=NÃO:" ))
+    if camada_poliacrilato == 1:
+        print("Aplicação efetuada")
+        break
+    else:
+        print("Aplicar poliacrilato")
+
+
+lista_regioes_cranio= ['anterior','superior','posterior']
+print("Posicionar a agulha, escolha uma região do crânio","Digite 1 para:",lista_regioes_cranio[0]," 2 para:",lista_regioes_cranio[1],"3 para:",lista_regioes_cranio[2])
+fixação_parafuso= int(input("Escolha a região para fixação dos parafusos: "))
+print("Obs: Cuidar para não aprofundar muito o parafuso. Com parafusos maiores deve-se dar até 3 voltas no parafuso")
+
+
+lista_poscionamento=['AnteroPosterior (AP)', 'LateroLateral (LL)','DorsoVentral (DV)']
+print("Poscionamentos:",lista_poscionamento)
+
+APinicial=6.42
+LLinicial=3.23
+DVinicial=4.2
+    
+AP=float(input("Digite o valor de poscionamento (AP): "))
+LLE=float(input("Digite o valor de poscionamento (LL): "))
+LLD=float(input("Digite o valor de poscionamento (LL): "))
+DV=float(input("Digite o valor de poscionamento (DV): "))
+    
+calculo_poscionamentoAP= APinicial-AP
+calculo_poscinamentoLLE=LLinicial-LLE
+calculo_poscinamentoLLD=LLinicial+LLD
+calculo_poscinamentoDV=DVinicial-DV
+print("Poscionamento realizado com sucesso:",calculo_poscionamentoAP)
+    
+inserção_das_cânulas_guia=[AP,LLE,LLD,DV]    
+
+escolha_hemisferio=input("Escolha qual dos hemisférios colocar a primeira cânula E ou D:" )
+
+print("Hemisfério",escolha_hemisferio)
+
+print("Para perfuração apoie a mão que segura a broca contra o assoalho e perfure o cranio a 45 graus")
+
+realizado=int(input("Realizado com sucesso 1-SIM 2-NÃO:"))
+
+if realizado == 1:
+    print("Realizando inserção da cânula guia até o valor DorsoVentral",DV)
+else:
+    print("Realizar ajustes necessários")
+
+print("Drenando qualquer sangue ou liquido cefalorraquidiano")
+
+Drenar=int(input("Drenar com sucesso 1-SIM 2-NÃO:"))
+
+if Drenar ==1:
+    print("Drenado com sucesso")
+else:
+    print("Repretir processo")
+
+print("Faça uma mistura do acrílico polimerizante com o solvente até ficar com textura espessa porém maleável") 
+
+Mistura=int(input("Mistura pronta 1-SIM 2-NAO:"))
+
+if Mistura ==1:
+    print("Mistura pronta com sucesso")
+else:
+    print("Repretir processo")
+
+print("Agora,om essa mistura faça um capacete abrangendo o crânio, a cânula-guia e o parafuso. Deixe secar até ficar suficientemente rígido. O tempo de secagem varia de acordo com a temperatura e umidade da sala")
+
+print("Levantando braxo estereotaxico")
+
+print("Poscinando agulha sobre o próximo ponto de inserção")
+
+print("Introduzindo a cânula-guia até o valor DV",DV,"calculado previamente")
+
+print("Drene qualquer sangue ou liquido cefalorraquidiano")
+
+Drenar2=int(input("Drenar com sucesso 1-SIM 2-NÃO:"))
+
+if Drenar2 ==1:
+    print("Mistura pronta com sucesso")
+else:
+    print("Repretir processo")
+
+print("Faça uma mistura do acrílico polimerizante com o solvente até ficar com textura espessa porém maleável")
+
+print(" Agora Levante bem devagar o animal, para que se acomode em uma caixa aquecida por uma lâmpada e sem outros animais acordados")
+
+print("Assim que o animal despertar colocá-lo de volta a sua caixa-moradia")
+
+Animal_desperto=int(input("Animal desperto 1-SIM 2-NAO:"))
+
+if Animal_desperto ==1:
+    print("Animal colocado de volta para caixa")
+else:
+    print("Aguardar animal despertar")
+
+print("Procedimento realizado com sucesso")
+
+
+
+ 
