@@ -1,0 +1,27 @@
+    1-Qual é o principal propósito de definir funções em programação?
+
+    a) Armazenar dados em uma lista
+    b) Executar um único bloco de código repetidamente enquanto uma condição é atendida
+    c) Reutilizar código e dividir um programa em partes mais gerenciáveis
+    d) Tomar decisões com base em condições específicas
+
+    2-Quando você deseja encapsular um conjunto de instruções em um bloco de código separado e reutilizável em um programa, que conceito de programação você aplicaria?
+
+    a) Estrutura condicional
+    b) Estrutura de repetição
+    c) Função
+    d) Classe
+
+    3-Em programação orientada a objetos, o que é uma classe?
+
+    a) Uma instância de uma função
+    b) Um tipo de dados primitivo
+    c) Um módulo de biblioteca padrão
+    d) Um modelo para criar objetos com atributos e métodos
+
+    4-Quando você cria objetos em uma linguagem de programação orientada a objetos, qual estrutura da linguagem é comumente usada para definir esses objetos com base em uma classe?
+
+    a) Função
+    b) Estrutura de repetição
+    c) Loop 'for'
+    d) Construtor de classe
