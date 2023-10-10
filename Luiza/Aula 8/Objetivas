@@ -1,0 +1,22 @@
+1- A manipulação de arquivos na programação permite uma maior funcionalidade e aplicabilidade deles. Dito isso, qual das alternativas abaixo é um exemplo pertinente da vantagem da manipulação de arquivos?
+Um software de edição de fotos que permite aos usuários salvar suas criações como arquivos de imagem em seus computadores. Isso permite que os usuários acessem e editem suas fotos em diferentes momentos, demonstrando a utilidade da manipulação de arquivos para a persistência de dados.
+Um aplicativo de previsão meteorológica que usa a manipulação de arquivos para criar automaticamente relatórios em tempo real sobre o clima, usando informações de arquivos de texto.
+Um jogo de vídeo que utiliza a manipulação de arquivos para permitir que os jogadores controlem o espaço-tempo e viajem para diferentes épocas históricas no jogo.
+Um aplicativo de mensagens que usa manipulação de arquivos para codificar e decodificar mensagens secretas em arquivos de imagem, permitindo aos usuários compartilhar informações confidenciais de forma segura, disfarçando-as como imagens normais.
+R: A
+
+2- Qual das opções abaixo pode ser vista como benefício de instalar pacotes adicionais para manipulação de arquivos em linguagens de programação?
+A) Para melhorar a velocidade de inicialização de seus dispositivos.
+B) Para aumentar a vida útil da bateria em smartphones.
+C) Para adicionar funcionalidades especializadas que não estão incluídas na biblioteca padrão da linguagem.
+D) Para otimizar a qualidade de transmissão de vídeo em tempo real.
+
+R: C
+
+3- Suponha que você está desenvolvendo um sistema de gerenciamento de estoque para uma loja. Você pode armazenar os dados de estoque obtidos em um arquivo TXT e outro CSV. Você escolhe o CSV, mas por qual motivo?
+A) O arquivo CSV é mais adequado para armazenar dados de texto simples.
+B) O arquivo CSV permite armazenar dados em formato tabular e estruturado, facilitando a leitura e a manipulação dos dados.
+C) O arquivo TXT tem maior capacidade de compactação, economizando espaço de armazenamento.
+D) O arquivo CSV é mais seguro contra falhas de disco em comparação com o arquivo TXT.
+R: B
+
