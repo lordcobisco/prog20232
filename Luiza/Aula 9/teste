@@ -1,7 +1,9 @@
 import paho.mqtt.client as mqtt
 import json
-arquivo = open('dadosSensor.txt','w')
-arquivo.write('Dados do Sensor a frequencia x,..\n')
+
+caminho = 'dadosSensor.txt'
+with open(caminho, 'w') as arquivo:
+    arquivo.write('Dados do Sensor IMU\n')
 
 def IMUdata():
     client.publish('cmd2dev9840',
@@ -16,7 +18,9 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
-    
+    if msg.topic == 'dev9840ss':
+        with open(caminho, 'a') as arquivo:
+            arquivo.write(msg.payload+'\n')
 
 client = mqtt.Client()
 client.on_connect = on_connect
