@@ -1,0 +1,103 @@
+Algoritmo ReabilitacaoComLokomat
+Var
+    nomePaciente: Literal
+    pesoPaciente, alturaPaciente, comprimentoCoxa, pressaoBracoLokomat, alturaAlcas, frequenciaPassada: Real
+    cadeirante, confortoColete, travado, equipamentoLigado, playStopCaminhada, confortoBracoLokomat: Lógico
+    qtdAlcas: Inteiro
+
+Função Comprimentar(nome: Literal)
+    Escreva "Cumprimentar o paciente " + nome
+Fim Função
+
+Função ColetarDados(var peso, altura: Real; var cadeirante: Lógico; var comprimentoCoxa: Real)
+    Escreva "Digite o peso do paciente:"
+    Leia peso
+    Escreva "Digite a altura do paciente:"
+    Leia altura
+    Escreva "O paciente é cadeirante? (S para Sim / N para Não):"
+    Leia cadeirante
+    Escreva "Digite o comprimento da coxa do paciente:"
+    Leia comprimentoCoxa
+Fim Função
+
+Função PosicionarColete()
+    Escreva "Posicionar o colete no paciente"
+    return confortoColete
+Fim Função
+
+Função TravarAlçasColete()
+    Escreva "Travar as alças do colete"
+    return travado
+Fim Função
+
+Função AjutarAuxilioPaciente(altura: Real)
+    Escreva "Ajustar a altura das alças para " + altura + " metros"
+Fim Função
+
+Função PosicionarPaciente()
+    Escreva "Posicionar o paciente no Lokomat"
+Fim Função
+
+Função DescerBracoLokomat()
+    Escreva "Descer o braço do Lokomat"
+Fim Função
+
+Função PosicionarApoioCintura()
+    Escreva "Posicionar o apoio na cintura do paciente"
+Fim Função
+
+Função TravarBracoLokomatCintura()
+    Escreva "Travar o braço do Lokomat na cintura"
+Fim Função
+
+Função TravarAlçasToraxLokomat()
+    Escreva "Travar as alças no tórax do paciente"
+Fim Função
+
+Função TravarBracoLokomatPernaEsquerda()
+    Escreva "Travar o braço do Lokomat na perna esquerda do paciente"
+Fim Função
+
+Função TravarBracoLokomatPernaDireita()
+    Escreva "Travar o braço do Lokomat na perna direita do paciente"
+Fim Função
+
+Função ValidarMovimentoPaciente()
+    Escreva "Validar o movimento do paciente"
+Fim Função
+
+Função AtivarAparelho(playStopCaminhada: Lógico)
+    Se playStopCaminhada = Verdadeiro Então
+        Escreva "Ativar o aparelho de caminhada"
+    Senão
+        Escreva "Desativar o aparelho de caminhada"
+    Fim_se
+    return equipamentoLigado
+Fim Função
+
+Função ConfigPassada(frequencia: Real)
+    Escreva "Configurar a frequência da passada para " + frequencia + " passos por minuto"
+Fim Função
+
+Inicio
+    Comprimentar(nomePaciente)
+    ColetarDados(pesoPaciente, alturaPaciente, cadeirante, comprimentoCoxa)
+    
+    PosicionarColete()
+    TravarAlçasColete()
+    AjutarAuxilioPaciente(alturaAlcas)
+    
+    PosicionarPaciente()
+    DescerBracoLokomat()
+    PosicionarApoioCintura()
+    TravarBracoLokomatCintura()
+    TravarAlçasToraxLokomat()
+    TravarBracoLokomatPernaEsquerda()
+    TravarBracoLokomatPernaDireita()
+    
+    ValidarMovimentoPaciente()
+    AjutarAuxilioPaciente(alturaAlcas)
+    AtivarAparelho(playStopCaminhada)
+    ConfigPassada(frequenciaPassada)
+    
+Fim

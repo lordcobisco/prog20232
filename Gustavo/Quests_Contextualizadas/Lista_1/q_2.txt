@@ -1,0 +1,91 @@
+Lokomat:
+
+  1. Variáveis:
+      - String nomePaciente
+      - Float pesoPaciente
+      - Float alturaPaciente
+      - Bool cadeirante
+      - Float comprimentoCoxa
+      - Bool confortoColete
+      - Bool confortoBracoLokomat
+      
+      - Int qtdAlcas
+      - Bool travado
+      - Float pressaoBracoLokomat
+      - Bool equipamentoLigado
+      - Float alturaAlças
+      - Bool playStopCaminhada
+      - Float frequenciaPassada
+        
+  2. Processamento (Funções):
+      - Comprimentar(nomePaciente)
+      - ColetarDados()
+      - PosicionarColete(posicaoSeta)
+          return confortoColete
+      - TravarAlçasColete()
+          return travado
+      - AjutarAuxilioPaciente(alturaAlças)
+      - PosicionarPaciente()
+      - DescerBracoLokomat()
+      - PosicionarApoioCintura()
+      - TravarBracoLokomatCintura()
+      - TravarAlçasToraxLokomat()
+      - TravarBracoLokomatPernaEsquerda()
+      - TravarAlçasToraxLokomat()
+      - TravarBracoLokomatPernaDireita()
+      - ValidarMovimentoPaciente()
+      - AjutarAuxilioPaciente(alturaAlças)
+      - AtivarAparelho(playStopCaminhada)
+          return equipamentoLigado          
+      - ConfigPassada(frequenciaPassada)
+
+  3. Entrada:
+      - Teclado
+      - Mouse
+      - Potenciometro -> Pressão do opoio do braço na cintura do paciente
+      - Potenciometro -> Altura da alça do Lokomat
+
+  4. Saida:
+      - Monitor
+
+zeroG:
+
+  1. Variáveis:
+      - String nomePaciente
+      - Float pesoPaciente
+      - Float alturaPaciente
+      - Bool cadeirante
+      - Bool confortoColete
+      
+      - Int qtdAlcas
+      - Bool travadoTorax
+      - Bool travadoCoxas
+      - Float alturaAlças
+      - Bool equipamentoLigado
+      - Bool playStopCaminhada
+      - Float frequenciaPassada
+        
+  2. Processamento (Funções):
+      - Comprimentar(nomePaciente)
+      - ColetarDados(pesoPaciente, alturaPaciente, cadeirante, comprimentoCoxa)
+      - PosicionarColete()
+          return confortoColete
+      - TravarAlçasColete()
+          return travadoTorax
+      - TravarAlçasCoxas()
+          return travadoCoxas
+      - PosicionarPaciente()
+      - AjutarAuxilioPaciente(alturaAlças)
+      - ValidarMovimentoPaciente()
+      - AtivarAparelho(playStopCaminhada)
+          return equipamentoLigado          
+      - ConfigPassada(frequenciaPassada)
+
+  3. Entrada:
+      - Teclado
+      - Mouse
+      - Potenciometro -> Pressão do opoio do braço na cintura do paciente
+      - Potenciometro -> Altura da alça do Lokomat
+
+  4. Saida:
+      - Monitor / Tablet

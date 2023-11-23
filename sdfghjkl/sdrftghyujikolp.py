@@ -1,2 +1,0 @@
-wertfghjklç~~çlkjuhygtfrdeswertyhujklççlkjhgfdsdfghjklç~]~çlkjhgfdssdfghjklç~]
-[´poiuytrertyhjklç
