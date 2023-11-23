@@ -1,0 +1,85 @@
+!pip install paho-mqtt
+
+import paho.mqtt.client as mqtt
+import csv
+import time
+
+# Configuration
+dispositivo = "dev9840"
+mqtt_host = "0.tcp.sa.ngrok.io"
+mqtt_port = 10618
+
+# CSV File for sensor data
+csv_filename = "/content/drive/MyDrive/2023.2/Programação/dados-andre-prog.csv"
+
+# Flag to control the loop
+keep_receiving = True
+
+# Callback function for successful connection to MQTT broker
+def on_connect(client, userdata, flags, rc):
+    print(f"Connected with result code {rc}")
+
+    # Subscribe to relevant topics
+    client.subscribe("newdev")
+    client.subscribe(f"{dispositivo}ss")
+    client.subscribe(f"{dispositivo}status")
+
+# Callback function for receiving MQTT messages
+def on_message(client, userdata, msg):
+    print(f"{msg.topic}: {msg.payload.decode('utf8')}")
+
+    # Check for a condition to stop receiving
+    global keep_receiving
+    if keep_receiving is False:
+        client.disconnect()
+        return
+
+    # Save data to CSV file when receiving from specific topic
+    if msg.topic == f"{dispositivo}ss":
+        save_to_csv(msg.payload)
+
+# Callback function for logging connection failures
+def on_log(client, userdata, level, buf):
+    print("Log:", buf)
+
+# Function to send a stop message to the MQTT broker
+def send_imu_stop():
+    imu_stop_operation = {"op": 30}
+
+    # Publish the stop message to the MQTT broker
+    client.publish(f"cmd2dev{dispositivo}", ','.join(str(val) for val in imu_stop_operation.values()))
+
+    print("Stop")
+
+# Function to save received data to CSV file
+def save_to_csv(data):
+    with open(csv_filename, 'a', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        csv_writer.writerow([data.decode('utf-8')])  # Assuming data is bytes, decode to string
+
+# MQTT client configuration
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_message = on_message
+client.on_log = on_log  # Added the on_log callback
+
+# Connect to the MQTT server
+client.connect(mqtt_host, mqtt_port, 60)
+
+# Start the loop to continue receiving messages
+try:
+    client.loop_start()
+    # Add a delay or other logic here if needed
+    time.sleep(600)  # Example: run for 600 seconds
+    # To stop receiving, set keep_receiving to False
+    keep_receiving = False
+    # Optional: Send a stop message before disconnecting
+    send_imu_stop()
+except KeyboardInterrupt:
+    # Handle KeyboardInterrupt (Ctrl+C) to gracefully stop the loop
+    pass
+finally:
+    # Disconnect from the MQTT broker
+    client.disconnect()
+
+####O arquivo csv gerado está na mesma pasta sob o nome de dados-andre-prog.csv

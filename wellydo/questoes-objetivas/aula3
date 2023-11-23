@@ -1,0 +1,37 @@
+#Listar os recursos da linguagem de programação  e situações onde é utilizada#
+1: Marque a opção referente ao recurso do Python capaz de organizar os dados em formato de coleção e de forma multidimensional.
+A) Listas.
+B) Dicionários. #Correta#
+C) Estruturas não sequenciais.
+D) Loops.
+
+#Reconhecer os ambientes de programação para o Python e os recursos computacionais para utilizá-lo"
+2: Assinale o ambiente de programação mais adequado para programação em Python.
+A) VSCode (Visual Studio Code). #Correta#
+B) Bloco de notas.
+C) Microsoft Word
+D) Jikes.
+
+#Lembrar, reconhecer e usar comentários variáveis e tipos e operadores em Python.#
+3: Marque a associação correta entre a importância de realizar comentários em Python e o símbolo utilizada para tal.
+I - Documentação para outros programadores.    1 - //
+II - Torna o código mais eficiente.            2 - ()
+III - Agiliza a execução do programa.          3 - #
+A) II - 1
+B) III - 3
+C) I - 3 #Correta#
+D) I - 2
+
+#Utilizar a ferramenta de desenvolvimento para escrever comandos de entrada e saída na linguagem."
+4: Marque a alternativa que corresponde aos comandos para solicitar a entrada de informação pelo usuário e exibir o resultado/output de uma determinada variável em Python, respectivamente.
+A) Input e Print. #Correta#
+B) Input e Int.
+C) Print e Plot.
+D) Read e Print.
+
+#Utilizar ferramentas de debug para visualizar variáveis e sequência de código.#
+5: Qual a melhor definição para "breakpoint" em uma ferramenta de debug?
+A) A propria mensagem de erro no código.
+B) Local/região em que o código trava e/ou apresenta o problema.
+C) Função para corrigir mensagem de erro.
+D) Região específica em que a execução do código é pausada para análise/inspeção. #Correta#

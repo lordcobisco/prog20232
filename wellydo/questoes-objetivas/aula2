@@ -1,0 +1,27 @@
+"Listar ferramentas para auxiliar o desenvolvimento de projetos de software"
+1: Qual a melhor alternativa que indica uma ferramenta/função interessante dentro da plataforma GitHub útil para o desenvolvimento de projetos de software com uma equipe de pessoas?
+A) Criação de repositórios compartilhados para organização dos dados e etapas do projeto. #Correta#
+B) Criação de um perfil interativo.
+C) Possibilidade de seguir perfis com interesses similares para aumentar o networking.
+D) Possibilidade de copiar códigos de outras pessoas para incrementar em um projeto pessoal.
+
+"Criar um repositório para armazenamento de projetos e trabalhos colaborativos"
+2: Dentre as plataforma abaixo, qual a melhor delas para o depósito de códigos em diversas linguagens de progrmação e facilitar a colaboração em projetos de desenvolvimento?
+A) Google Drive
+B) Trello
+C) Stack Overflow
+D) GitHub #Correta#
+
+"Utilizar uma ferramenta git para desenvolvimento de projetos em neuroengenharia"
+3: Qual a melhor vantagem de utilizar um sistema colaborativo, como o GitHub, para o planejamento e execução de um projeto em neuroengenharia?
+A) Faciltar a comunicação entre os colaboradores.
+B) Segurança dos dados em relação ao armazenamento na nuvem.
+C) Rastreamento das alterações e atividades feitas por algum colaborador sem necessariamente alterar o dado fonte original. #Correta#
+D) Servir como plataforma de registro para as etapas de um projeto.
+
+"Descrever fluxos de trabalho para desenvolvimento de projetos em neuroengenharia"
+4: No contexto de desenvolvimento de projetos em neuroengenharia, na elaboração de fluxos de trabalho eficients, qual a melhor definização para a função "fork" no GitHub?
+A) Modificar diretamente um repositório de um colaborador.
+B) Criar cópia de um repositório para seu domínio/perfil, a fim de colaborar com ele ou modificá-lo. #Correta#
+C) Notificar outro colaborador sobre alguma alteração feita no projeto.
+D) Comparar um repositório pessoal com um de outro colaborador.
