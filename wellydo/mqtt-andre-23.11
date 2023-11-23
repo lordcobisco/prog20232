@@ -70,7 +70,7 @@ client.connect(mqtt_host, mqtt_port, 60)
 try:
     client.loop_start()
     # Add a delay or other logic here if needed
-    time.sleep(600)  # Example: run for 30 seconds
+    time.sleep(600)  # Example: run for 600 seconds
     # To stop receiving, set keep_receiving to False
     keep_receiving = False
     # Optional: Send a stop message before disconnecting
