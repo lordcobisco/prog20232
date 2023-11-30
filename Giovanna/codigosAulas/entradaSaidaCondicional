@@ -1,0 +1,17 @@
+# comandos de entrada e saída em estrutura de decisão
+
+peso = float(input('Digite seu peso (kg)'))
+altura = float(input('Digite sua altura (m)'))
+imc = peso/(altura**2)
+print('Seu IMC é', imc)
+
+if imc < 17:
+    print("Estou muito abaixo do peso")
+elif imc >= 17 and imc < 18.5:
+    print("Estou abaixo do peso")
+elif 18.5 <= imc <= 25:
+    print("Estou dentro do peso")
+elif imc > 25 and imc <= 30:
+    print("Estou acima do peso")
+elif imc > 30: # aqui poderia ser else, caso omisso
+    print("Estou muito acima do peso? ")
