@@ -1,0 +1,36 @@
+Como funciona a ferramenta debug?
+A) Permite que os desenvolvedores pausem a execução do código em pontos específicos, examinem variáveis, controlem o fluxo do programa e visualizem informações úteis.
+B) Pausa o código assim que percebe um erro e corrige sem o auxílio do programador.
+C) Mostra o que falta para completar a sintaxe iniciada pelo programador
+D) Nenhuma das anteriores
+
+R: A
+
+Qual o intuito da função comentários no código Python?
+A) Serve para mudar a cor do comando colocado no código
+B) Melhora a legibilidade e a documentação do código, ajudam a explicar o propósito do código, esclarecem decisões, documentam funções e métodos e fornecem informações adicionais. Eles facilitam o entendimento do código.
+C) É um tipo de comando dentro da programação.
+
+R: B
+
+Como você escolheria um ambiente de programação de Python levando em consideração os recursos computacionais disponíveis para o desenvolvimento de interface humano-máquina?
+A) Com base exclusivamente na plataforma alvo.
+B) Levando em consideração apenas a experiência pessoal.
+C) Avaliando apenas a disponibilidade de bibliotecas Python.
+D) Considerando a potência de processamento, memória, requisitos do projeto, plataforma alvo, experiência pessoal, disponibilidade de bibliotecas, integração com outros sistemas, custos e desempenho.
+
+R: D
+
+O que são operadores utilizados no Python? 
+A) São símbolos ou palavras-chave que permitem realizar operações em variáveis e valores. Eles são usados para executar cálculos, comparações, atribuições e outras ações em um programa. 
+B) São palavras-chaves que permitem a realização de operações específicas.
+C) São operadores aritméticos que realizam operações matemáticas.
+
+R: A
+
+Pra que serve comandos de entrada e saída em um código?
+A) Os de entrada servem para o recebimento de dados do ambiente externo, enquanto os de saída permitem que o programa exiba informações ou resultados.
+B) Os de entrada permitem que o programa exiba informações ou resultados, enquanto os de saída permitem o recebimento de dados externos.
+C) Todos os dois exercem a mesma função, usar um ou outro dependerá do seu software e do que você deseja fazer.
+
+R: A

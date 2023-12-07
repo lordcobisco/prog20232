@@ -1,0 +1,29 @@
+Dentre as opções, qual é utilizada para desenvolver softwares?
+A) Navegadores da web
+B) Colab
+C) Ambientes de desenvolvimento integrado (IDEs)
+D) Softwares de edição de imagem
+
+R: C
+
+Qual a funcionalidade de armazenar projetos em repositórios do GitHub?
+A) Armazenar projetos no GitHub permite somente rastrear o histórico de mudanças
+B) Armazenar projetos no GitHub permite compartilhar fotos.
+C) Armazenar projetos no GitHub permite controlar mudanças no código, colaborar com outros desenvolvedores e gerenciar problemas.
+D) Armazenar projetos no GitHub é apenas uma forma de fazer backup de arquivos.
+
+R: C
+
+Quais ferramentas podemos utilizar no git para desenvolvimento de projetos em neuroengenharia?
+A) Ferramentas de edição de vídeo
+B) Ferramentas de design gráfico
+C) Linguagens de programação, como Python, Jupyter Notebooks.
+D) Nenhuma das citadas.
+
+Quais ferramentas são essenciais em um fluxo de trabalho de desenvolvimento de projetos em neuroengenharia para otimizar a coleta, análise e interpretação de dados neurofisiológicos?
+A) Somente EEG e/ou EMG e python.
+B) Ferramentas de pré-processamento e ambientes de desenvolvimento como Jupyter Notebooks
+C) Sistemas de controle de versão, como o GitHub.
+D) A depender do projeto poderá haver diversas ferramentas, entretanto, o conjunto EEG e EMG para coleta, python, jupyter notebooks e sistemas de controle para processamento e interpretação de dados pode ser fundamental
+
+R: D

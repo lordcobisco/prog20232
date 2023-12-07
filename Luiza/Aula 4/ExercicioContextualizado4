@@ -1,0 +1,63 @@
+#Etapa de habituação
+HabituacaoAnimal = input("O animal está habituado? Digite S para sim e N para não.")
+if HabituacaoAnimal == "S":
+     print ("Animal habituado. Vamos iniciar o treinamento.")
+     HabituacaoAnimal = True
+else:
+    print ("Realize a habituação do animal novamente")
+    HabituacaoAnimal = False
+
+#Regime de aproximações sucessivas
+if HabituacaoAnimal == True:
+     print ("Inicío de aproximação da barra com 30cm. O animal deverá se aproximar a uma distância igual ou menor que essa.")
+     aproximacao = float(input("Em quanto cm houve a apromoximação?"))
+     if aproximacao < 30:
+          print ("Libere 0,5ml de recompensa.")
+          AnimalAproximado = True
+else:
+     print ("Tente novamente a aproximação.")
+     AnimalAproximado = False
+
+AnimalBarra = True
+if AnimalBarra:
+     TocarVinteVezes = input("O animal tocou 20 vezes na barra? Digite “S” para sim e “N” para não. ")
+     if TocarVinteVezes == "S":
+          print("Experimento passou para a próxima etapa.")
+else:
+     print("Experimento não passou para a próxima etapa.")
+
+Som1 = True
+if Som1:
+     Som1Emitido = input("Qual som foi emitido? Digite som 1 ou som 2.")
+     if Som1Emitido == "som 1":
+          print("O som 1 foi emitido.")
+
+BarraEsquerda = True
+if BarraEsquerda:
+     BarraTocada = input("O animal tocou em qual barra? Digite esquerda ou direita: ")
+     if BarraTocada == "esquerda":
+          print("Libere 0,5ml de recompensa.")
+else:
+     print ("Não libere a recompensa.")
+
+Som2 = True
+if Som2:
+     Som2Emitido = float(input("Qual som foi emitido? Digite som 1 ou som 2."))
+     if Som2Emitido == "som 2":
+          print("O som 2 foi emitido.")
+
+BarraDireita = True
+if BarraDireita:
+     TocouDireita = input("O animal tocou em qual barra? Digite esquerda ou direita.")
+     if TocouDireita == "Direita":
+          print ("Libere 0,5ml de recompensa.")
+else: print ("Não libere a recompensa.")
+
+
+# Se o experimento foi realizado 50x em 30min, apresentar que o experimento seguirá para a próxima fase.
+TempoDeExperimento=True
+if TempoDeExperimento:
+     repeticoes = input("O experimento foi realizado 50x em 30min? Digite 'S' para sim e 'N' para não.")
+     if repeticoes== "S":
+        print ("O experimento passará para próxima etapa.")
+else: print ("Continue na etapa de aproximações sucessivas")

@@ -1,0 +1,234 @@
+#Lista - 3 regiões dos estados brasileiros
+
+estadosBrasilLista = [
+   ['Norte', 'AP', 'Calçoene', 16, 160020, 16002, 'AREA NORTE', '2023-07-01', 26, 11117, 3263, 0, 15, 0, 0],
+   ['Norte', 'AP', 'Cutias', 16, 160021, 16001, 'AREA CENTRAL', '2023-07-01', 26, 5983, 1180, 0, 7, 0, 0],
+   ['Norte', 'AP', 'Ferreira Gomes', 16, 160023, 16001, 'AREA CENTRAL', '2023-07-01', 26, 7780, 2280, 0, 7, 0, 0],
+   ['Norte', 'TO', 'Aliança do Tocantins', 17, 170035, 17005, 'ILHA DO BANANAL', '2023-07-01', 26, 5390, 1351, 0, 26, 0, 0],
+   ['Norte', 'TO', 'Almas', 17, 170040, 17003, 'SUDESTE', '2023-07-01', 26, 7055, 337, 0, 5, 0, 0],
+   ['Norte', 'TO', 'Alvorada', 17, 170070, 17005, 'ILHA DO BANANAL', '2023-07-01', 26, 8412, 3808, 0, 32, 0, 0],
+   ['Norte', 'PA', 'São João de Pirabas', 15, 150747, 15009, 'RIO CAETES', '2023-07-01', 26, 23045, 371, 0, 48, 0, 0],
+   ['Norte', 'PA', 'São Miguel do Guamá', 15, 150760, 15008, 'METROPOLITANA III', '2023-07-01', 26, 58986, 5608, 0, 78, 0, 0],
+   ['Norte', 'PA', 'São Sebastião da Boa Vista', 15, 150770, 15013, 'MARAJO I', '2023-07-01', 26, 26640, 1105, 0, 33, 0, 0],
+   ['Norte', 'RR', 'Amajari', 14, 140002, 14001, 'CENTRO NORTE','07-01-2023', 1, 12796, 1536, 0, 26, 0, 0],
+   ['Norte', 'RR', 'Alto Alegre', 14, 140005, 14001,'CENTRO NORTE',	'07-01-2023',	1, 15510, 2665, 0, 39, 0, 1],
+   ['Norte', 'RR', 'Boa Vista', 14, 140010, 14001, 'CENTRO NORTE','07-01-2023', 1, 399213, 138381, 0, 1640, 0, 1],
+   ['Norte', 'RR', 'Boa Vista', 14, 140010, 14001, 'CENTRO NORTE','07-01-2023', 1, 399213, 138381, 0, 1640, 0, 1],
+   ['Nordeste', 'MA', 'Morros', 21, 210710, 21013, 'ROSARIO', '2023-07-01', 26, 19433, 579, 0, 17, 0, 1],
+   ['Nordeste', 'MA', 'Nina Rodrigues', 21, 210720, 21009, 'ITAPECURU MIRIM', '2023-07-01', 26, 14454, 1200, 0, 20, 0, 0],
+   ['Nordeste', 'MA', 'Nova Colinas', 21, 210725, 21003, 'BALSAS', '2023-07-01', 26, 5384, 597, 0, 6, 0, 0],
+   ['Nordeste', 'CE', 'Ipaporanga', 23, 230565, 23015, '15ª REGIAO CRATEUS', '2023-07-01', 26, 11593, 1587, 1, 18, 0, 0],
+   ['Nordeste', 'CE', 'Irauçuba', 23, 230610, 23011, '11ª REGIAO SOBRAL', '2023-07-01', 26, 24156, 2408, 0, 48, 0, 0],
+   ['Nordeste', 'CE', 'Itaiçaba', 23, 230620, 23007, '7ª REGIAO ARACATI', '2023-07-01', 26, 7827, 2191, 0, 29, 0, 0],
+   ['Nordeste', 'AL', 'Olivença', 27, 270600, 27009, '9ª REGIAO DE SAUDE', '2023-07-01', 26, 11624, 603, 0, 17, 0, 0],
+   ['Nordeste', 'AL', 'Palestina', 27, 270620, 27009, '9ª REGIAO DE SAUDE', '2023-07-01', 26, 5011, 583, 0, 5, 0, 0],
+   ['Nordeste', 'AL', 'Palmeira dos Índios', 27, 270630, 27008, '8ª REGIAO DE SAUDE', '2023-07-01', 26, 73218, 7657, 0, 190, 1, 0],
+   ['Nordeste', 'SE', 'Aquidabã', 28, 280020, 28007, 'PROPRIA', '2023-07-01', 26, 21563, 2693, 0, 47, 0, 0],
+   ['Nordeste', 'SE', 'Canhoba', 28, 280110, 28007, 'PROPRIA', '2023-07-01', 26, 4008, 409, 0, 7, 0, 0],
+   ['Nordeste', 'PI', 'Eliseu Martins',	22,	220360,	22002,'CHAPADA DAS MANGABEIRAS', '07/01/2023',	1,	4915, 345, 0, 17, 0, 0],
+   ['Nordeste', 'PI', 'Esperantina', 22, 220370, 22003, 'COCAIS', '07/01/2023',	1, 39737, 2964, 0, 101, 0, 0],
+   ['Nordeste', 'PI', 'Fartura do Piauí', 22, 220375, 22006, 'SERRA DA CAPIVARA','07/01/2023',	1, 5307, 190, 0, 6, 0, 0],
+   ['Nordeste', 'SE', 'Canindé de São Francisco', 28, 280120, 28005, 'NOSSA SENHORA DA GLORIA', '2023-07-01', 26, 29900, 3536, 0, 51, 0, 0],
+   ['Nordeste', 'BA', 'Lagoa Real', 29, 291875, 29007, 'GUANAMBI', '2023-07-01', 26, 15665, 1636, 0, 14, 0, 0],
+   ['Nordeste', 'BA', 'Laje', 29, 291880, 29022, 'SANTO ANTONIO DE JESUS', '2023-07-01', 26, 23840, 2868, 1, 46, 0, 0],
+   ['Nordeste', 'BA', 'Lajedão', 29, 291890, 29026, 'TEIXEIRA DE FREITAS', '2023-07-01', 26, 3955, 854, 0, 10, 0, 0],
+   ['Nordeste', 'PB', 'Igaracy', 25, 250260, 25007, '7ª REGIAO', '2023-07-01', 26, 6117, 484, 0, 8, 0, 0],
+   ['Nordeste', 'PB', 'Borborema', 25, 250270, 25002, '2ª REGIAO', '2023-07-01', 26, 5263, 484, 0, 14, 0, 0],
+   ['Nordeste', 'PB', 'Brejo do Cruz', 25, 250280, 25008, '8ª REGIAO', '2023-07-01', 26, 14122, 2134, 3, 25, 0, 0],
+   ['Nordeste', 'PE', 'Serra Talhada', 26, 261390, 26012, 'SERRA TALHADA', '2023-07-01', 26, 86350, 21416, 9, 208, 0, 0],
+   ['Nordeste', 'PE', 'Serrita', 26, 261400, 26011, 'SALGUEIRO', '2023-07-01', 26, 19165, 3852, 15, 29, 0, 0],
+   ['Nordeste', 'PE', 'Sertânia', 26, 261410, 26002, 'ARCOVERDE', '2023-07-01', 26, 35907, 3884, 0, 61, 0, 0],
+   ['Nordeste', 'RN', 'Tangará', 24, 241400, 24005, '5ª REGIAO DE SAUDE - SANTA CRUZ', '2023-07-01', 26, 15727, 1680, 0, 24, 0, 0],
+   ['Nordeste', 'RN', 'Taipu', 24, 241390, 24003, '3ª REGIAO DE SAUDE - JOAO CAMARA', '2023-07-01', 26, 12279, 1696, 0, 17, 0, 0],
+   ['Nordeste', 'RN', 'Taboleiro Grande', 24, 241380, 24006, '6ª REGIAO DE SAUDE - PAU DOS FERROS', '2023-07-01', 26, 2566, 454, 0, 6, 0, 0],
+   ['Sudeste', 'MG', 'Ipiaçu', 31, 313140, 31073, 'ITUIUTABA', '2023-07-01', 26, 4221, 1534, 0, 21, 0, 0],
+   ['Sudeste', 'MG', 'Ipuiúna', 31, 313150, 31007, 'POUSO ALEGRE', '2023-07-01', 26, 10079, 2751, 0, 47, 0, 0],
+   ['Sudeste', 'MG', 'Iraí de Minas', 31, 313160, 31074, 'PATROCINIO / MONTE CARMELO', '2023-07-01', 26, 6987, 911, 0, 16, 0, 0],
+   ['Sudeste', 'SP', 'Ipuã', 35, 352130, 35082, 'ALTA ANHANGUERA', '2023-07-01', 26, 16409, 2830, 0, 70, 0, 0],
+   ['Sudeste', 'SP', 'Ipeúna', 35, 352110, 35104, 'RIO CLARO', '2023-07-01', 26, 7546, 789, 0, 25, 0, 0],
+   ['Sudeste', 'SP', 'Itapetininga', 35, 352230, 35161, 'ITAPETININGA', '2023-07-01', 26, 163901, 18290, 0, 617, 0, 0],
+   ['Sudeste', 'ES', 'São Roque do Canãa', 32, 320495, 32001, 'CENTRAL', '07-01-2023', 32,	12415,	5256, 0, 23, 0, 0],
+   ['Sudeste', 'ES', 'Águia Branca', 32, 320013, 32001, 'CENTRAL', '2023-07-01', 26, 9642, 4164, 0, 68, 0, 0],
+   ['Sudeste', 'ES', 'Alegre', 32, 320020, 32004, 'SUL', '2023-07-01', 26, 30084, 9478, 0, 94, 0, 0],
+   ['Sudeste', 'RJ', 'Cardoso Moreira', 33, 330115, 33007, 'NOROESTE', '2023-07-01', 26, 12823, 2707, 0, 23, 0, 0],
+   ['Sudeste', 'RJ', 'Carmo', 33, 330120, 33009, 'SERRANA', '2023-07-01', 26, 18895, 4199, 0, 59, 0, 0],
+   ['Sudeste', 'RJ', 'Casimiro de Abreu', 33, 330130, 33002, 'BAIXADA LITORANEA', '2023-07-01', 26, 44184, 8789, 63, 165, 0, 0],
+   ['Sul', 'PR', 'Palotina', 41, 411790, 41020, '20ª RS TOLEDO', '2023-07-01', 26, 31846, 11159, 1, 105, 0, 0],
+   ['Sul', 'PR', 'Palmital', 41, 411780, 41005, '5ª RS GUARAPUAVA', '2023-07-01', 26, 13172, 2705, 0, 42, -1, 0],
+   ['Sul', 'PR', 'Palmas', 41, 411760, 41007, '7ª RS PATO BRANCO', '2023-07-01', 26, 50986, 14078, 0, 178, 0, 0],
+   ['Sul', 'RS', 'Cerrito', 43, 430512, 43021, 'REGIAO 21', '2023-07-01', 26, 6091, 1022, 0, 15, 0, 0],
+   ['Sul', 'RS', 'Cerro Branco', 43, 430513, 43027, 'REGIAO 27', '2023-07-01', 26, 4691, 763, 0, 7, 0, 0],
+   ['Sul', 'RS', 'Cerro Grande do Sul', 43, 430517, 43009, 'REGIAO 09', '2023-07-01', 26, 12239, 1343, 0, 29, 0, 0],
+   ['Sul', 'SC', 'Serra Alta', 42, 421755, 42002, 'OESTE', '2023-07-01', 26, 3263, 527, 0, 6, 0, 0],
+   ['Sul', 'SC', 'Seara', 42, 421750, 42010, 'ALTO URUGUAI CATARINENSE', '2023-07-01', 26, 17541, 5372, 0, 42, 0, 0],
+   ['Sul', 'SC', 'Schroeder', 42, 421740, 42011, 'NORDESTE', '2023-07-01', 26, 21365, 7755, 0, 45, 0, 0],
+   ['Centro-Oeste', 'MS', 'São Gabriel do Oeste', 50, 500769, 50001, 'CAMPO GRANDE', '2023-07-01', 26, 26771, 6083, 0, 98, 0, 0],
+   ['Centro-Oeste', 'MS', 'Rio Verde de Mato Grosso', 50, 500740, 50001, 'CAMPO GRANDE', '2023-07-01', 26, 19746, 3853, 0, 84, 0, 0],
+   ['Centro-Oeste', 'MS', 'Rio Brilhante', 50, 500720, 50003, 'DOURADOS', '2023-07-01', 26, 37514, 7604, 0, 96, 0, 0],
+   ['Centro-Oeste', 'MT', 'Paranaíta', 51, 510629, 51001, 'ALTO TAPAJOS', '2023-07-01', 26, 11225, 5586, 1, 39, 0, 0],
+   ['Centro-Oeste', 'MT', 'Novo Santo Antônio', 51, 510631, 51009, 'NORTE ARAGUAIA KARAJA', '2023-07-01', 26, 2640, 945, 0, 6, 0, 0],
+   ['Centro-Oeste', 'MT', 'Pedra Preta', 51, 510637, 51013, 'SUL MATOGROSSENSE', '2023-07-01', 26, 17626, 3660, 0, 72, 0, 0],
+   ['Centro-Oeste', 'GO', 'Planaltina', 52, 521760, 52003, 'ENTORNO NORTE', '2023-07-01', 26, 89918, 9948, 0, 258, 0, 0],
+   ['Centro-Oeste', 'GO', 'Pontalina', 52, 521770, 52002, 'CENTRO SUL', '2023-07-01', 26, 17819, 5074, 0, 61, 0, 0],
+   ['Centro-Oeste', 'GO', 'Porangatu', 52, 521800, 52008, 'NORTE', '2023-07-01', 26, 45394, 4089, 0, 192, 0, 0]
+ ]
+
+
+estadosBrasilTupla = [
+   ('Norte', 'AP', 'Calçoene', 16, 160020, 16002, 'AREA NORTE', '2023-07-01', 26, 11117, 3263, 0, 15, 0, 0),
+   ('Norte', 'AP', 'Cutias', 16, 160021, 16001, 'AREA CENTRAL', '2023-07-01', 26, 5983, 1180, 0, 7, 0, 0),
+   ('Norte', 'AP', 'Ferreira Gomes', 16, 160023, 16001, 'AREA CENTRAL', '2023-07-01', 26, 7780, 2280, 0, 7, 0, 0),
+   ('Norte', 'TO', 'Aliança do Tocantins', 17, 170035, 17005, 'ILHA DO BANANAL', '2023-07-01', 26, 5390, 1351, 0, 26, 0, 0),
+   ('Norte', 'TO', 'Almas', 17, 170040, 17003, 'SUDESTE', '2023-07-01', 26, 7055, 337, 0, 5, 0, 0),
+   ('Norte', 'TO', 'Alvorada', 17, 170070, 17005, 'ILHA DO BANANAL', '2023-07-01', 26, 8412, 3808, 0, 32, 0, 0),
+   ('Norte', 'PA', 'São João de Pirabas', 15, 150747, 15009, 'RIO CAETES', '2023-07-01', 26, 23045, 371, 0, 48, 0, 0),
+   ('Norte', 'PA', 'São Miguel do Guamá', 15, 150760, 15008, 'METROPOLITANA III', '2023-07-01', 26, 58986, 5608, 0, 78, 0, 0),
+   ('Norte', 'PA', 'São Sebastião da Boa Vista', 15, 150770, 15013, 'MARAJO I', '2023-07-01', 26, 26640, 1105, 0, 33, 0, 0),
+   ('Norte', 'RR', 'Amajari', 14, 140002, 14001, 'CENTRO NORTE', '2023-07-01', 26, 12796, 1536, 0, 26, 0, 0),
+   ('Norte', 'RR', 'Alto Alegre', 14, 140005, 14001, 'CENTRO NORTE', '2023-07-01', 26, 15510, 2665, 0, 39, 0, 1),
+   ('Norte', 'RR', 'Boa Vista', 14, 140010, 14001, 'CENTRO NORTE', '2023-07-01', 26, 399213, 138381, 0, 1640, 0, 1),
+   ('Norte', 'RR', 'Boa Vista', 14, 140010, 14001, 'CENTRO NORTE', '2023-07-01', 26, 399213, 138381, 0, 1640, 0, 1),
+   ('Nordeste', 'MA', 'Morros', 21, 210710, 21013, 'ROSARIO', '2023-07-01', 26, 19433, 579, 0, 17, 0, 1),
+   ('Nordeste', 'MA', 'Nina Rodrigues', 21, 210720, 21009, 'ITAPECURU MIRIM', '2023-07-01', 26, 14454, 1200, 0, 20, 0, 0),
+   ('Nordeste', 'MA', 'Nova Colinas', 21, 210725, 21003, 'BALSAS', '2023-07-01', 26, 5384, 597, 0, 6, 0, 0),
+   ('Nordeste', 'CE', 'Ipaporanga', 23, 230565, 23015, '15ª REGIÃO CRATEUS', '2023-07-01', 26, 11593, 1587, 1, 18, 0, 0),
+   ('Nordeste', 'CE', 'Irauçuba', 23, 230610, 23011, '11ª REGIÃO SOBRAL', '2023-07-01', 26, 24156, 2408, 0, 48, 0, 0),
+   ('Nordeste', 'CE', 'Itaiçaba', 23, 230620, 23007, '7ª REGIÃO ARACATI', '2023-07-01', 26, 7827, 2191, 0, 29, 0, 0),
+   ('Nordeste', 'AL', 'Olivença', 27, 270600, 27009, '9ª REGIÃO DE SAÚDE', '2023-07-01', 26, 11624, 603, 0, 17, 0, 0),
+   ('Nordeste', 'AL', 'Palestina', 27, 270620, 27009, '9ª REGIÃO DE SAÚDE', '2023-07-01', 26, 5011, 583, 0, 5, 0, 0),
+   ('Nordeste', 'AL', 'Palmeira dos Índios', 27, 270630, 27008, '8ª REGIÃO DE SAÚDE', '2023-07-01', 26, 73218, 7657, 0, 190, 1, 0),
+   ('Nordeste', 'SE', 'Aquidabã', 28, 280020, 28007, 'PROPRIA', '2023-07-01', 26, 21563, 2693, 0, 47, 0, 0),
+   ('Nordeste', 'SE', 'Canhoba', 28, 280110, 28007, 'PROPRIA', '2023-07-01', 26, 4008, 409, 0, 7, 0, 0),
+   ('Nordeste', 'SE', 'Canindé de São Francisco', 28, 280120, 28005, 'NOSSA SENHORA DA GLÓRIA', '2023-07-01', 26, 29900, 3536, 0, 51, 0, 0),
+   ('Nordeste', 'PI', 'Eliseu Martins',	22,	220360,	22002,'CHAPADA DAS MANGABEIRAS', '07/01/2023',	1,	4915, 345, 0, 17, 0, 0),
+   ('Nordeste', 'PI', 'Esperantina', 22, 220370, 22003, 'COCAIS', '07/01/2023',	1, 39737, 2964, 0, 101, 0, 0),
+   ('Nordeste', 'PI', 'Fartura do Piauí', 22, 220375, 22006, 'SERRA DA CAPIVARA','07/01/2023',	1, 5307, 190, 0, 6, 0, 0),
+   ('Nordeste', 'BA', 'Lagoa Real', 29, 291875, 29007, 'GUANAMBI', '2023-07-01', 26, 15665, 1636, 0, 14, 0, 0),
+   ('Nordeste', 'BA', 'Laje', 29, 291880, 29022, 'SANTO ANTÔNIO DE JESUS', '2023-07-01', 26, 23840, 2868, 1, 46, 0, 0),
+   ('Nordeste', 'BA', 'Lajedão', 29, 291890, 29026, 'TEIXEIRA DE FREITAS', '2023-07-01', 26, 3955, 854, 0, 10, 0, 0),
+   ('Nordeste', 'PB', 'Igaracy', 25, 250260, 25007, '7ª REGIÃO', '2023-07-01', 26, 6117, 484, 0, 8, 0, 0),
+   ('Nordeste', 'PB', 'Borborema', 25, 250270, 25002, '2ª REGIÃO', '2023-07-01', 26, 5263, 484, 0, 14, 0, 0),
+   ('Nordeste', 'PB', 'Brejo do Cruz', 25, 250280, 25008, '8ª REGIÃO', '2023-07-01', 26, 14122, 2134, 3, 25, 0, 0),
+   ('Nordeste', 'PE', 'Serra Talhada', 26, 261390, 26012, 'SERRA TALHADA', '2023-07-01', 26, 86350, 21416, 9, 208, 0, 0),
+   ('Nordeste', 'PE', 'Serrita', 26, 261400, 26011, 'SALGUEIRO', '2023-07-01', 26, 19165, 3852, 15, 29, 0, 0),
+   ('Nordeste', 'PE', 'Sertânia', 26, 261410, 26002, 'ARCOVERDE', '2023-07-01', 26, 35907, 3884, 0, 61, 0, 0),
+   ('Nordeste', 'RN', 'Tangará', 24, 241400, 24005, '5ª REGIÃO DE SAÚDE - SANTA CRUZ', '2023-07-01', 26, 15727, 1680, 0, 24, 0, 0),
+   ('Nordeste', 'RN', 'Taipu', 24, 241390, 24003, '3ª REGIÃO DE SAÚDE - JOÃO CÂMARA', '2023-07-01', 26, 12279, 1696, 0, 17, 0, 0),
+   ('Nordeste', 'RN', 'Taboleiro Grande', 24, 241380, 24006, '6ª REGIÃO DE SAÚDE - PAU DOS FERROS', '2023-07-01', 26, 2566, 454, 0, 6, 0, 0),
+   ('Nordeste', 'PB', 'Pilar', 25, 251150, 25012, '12ª REGIAO', '2023-07-01', 26, 11917, 2269, 0, 36, 0, 0, 0),
+   ('Nordeste', 'PB', 'Pilões', 25, 251160, 25002, '2ª REGIAO', '2023-07-01', 26, 6635, 384, 0, 10, 0, 0, 0),
+   ('Nordeste', 'PB', 'Pilõezinhos', 25, 251170, 25002, '2ª REGIAO', '2023-07-01', 26, 4976, 786, 0, 14, 0, 0, 0),
+   ('Sudeste', 'MG', 'Ipiaçu', 31, 313140, 31073, 'ITUIUTABA', '2023-07-01', 26, 4221, 1534, 0, 21, 0, 0),
+   ('Sudeste', 'MG', 'Ipuiúna', 31, 313150, 31007, 'POUSO ALEGRE', '2023-07-01', 26, 10079, 2751, 0, 47, 0, 0),
+   ('Sudeste', 'MG', 'Iraí de Minas', 31, 313160, 31074, 'PATROCÍNIO / MONTE CARMELO', '2023-07-01', 26, 6987, 911, 0, 16, 0, 0),
+   ('Sudeste', 'SP', 'Ipuã', 35, 352130, 35082, 'ALTA ANHANGUERA', '2023-07-01', 26, 16409, 2830, 0, 70, 0, 0),
+   ('Sudeste', 'SP', 'Ipeúna', 35, 352110, 35104, 'RIO CLARO', '2023-07-01', 26, 7546, 789, 0, 25, 0, 0),
+   ('Sudeste', 'SP', 'Itapetininga', 35, 352230, 35161, 'ITAPETININGA', '2023-07-01', 26, 163901, 18290, 0, 617, 0, 0),
+   ('Sudeste', 'ES', 'São Roque do Canaã', 32, 320495, 32001, 'CENTRAL', '2023-07-01', 26, 12415, 5256, 0, 23, 0, 0),
+   ('Sudeste', 'ES', 'Águia Branca', 32, 320013, 32001, 'CENTRAL', '2023-07-01', 26, 9642, 4164, 0, 68, 0, 0),
+   ('Sudeste', 'ES', 'Alegre', 32, 320020, 32004, 'SUL', '2023-07-01', 26, 30084, 9478, 0, 94, 0, 0),
+   ('Sudeste', 'RJ', 'Cardoso Moreira', 33, 330115, 33007, 'NOROESTE', '2023-07-01', 26, 12823, 2707, 0, 23, 0, 0),
+   ('Sudeste', 'RJ', 'Carmo', 33, 330120, 33009, 'SERRANA', '2023-07-01', 26, 18895, 4199, 0, 59, 0, 0),
+   ('Sudeste', 'RJ', 'Casimiro de Abreu', 33, 330130, 33002, 'BAIXADA LITORÂNEA', '2023-07-01', 26, 44184, 8789, 63, 165, 0, 0),
+   ('Sul', 'PR', 'Palotina', 41, 411790, 41020, '20ª RS TOLEDO', '2023-07-01', 26, 31846, 11159, 1, 105, 0, 0),
+   ('Sul', 'PR', 'Palmital', 41, 411780, 41005, '5ª RS GUARAPUAVA', '2023-07-01', 26, 13172, 2705, 0, 42, -1, 0),
+   ('Sul', 'PR', 'Palmas', 41, 411760, 41007, '7ª RS PATO BRANCO', '2023-07-01', 26, 50986, 14078, 0, 178, 0, 0),
+   ('Sul', 'RS', 'Cerrito', 43, 430512, 43021, 'REGIÃO 21', '2023-07-01', 26, 6091, 1022, 0, 15, 0, 0),
+   ('Sul', 'RS', 'Cerro Branco', 43, 430513, 43027, 'REGIÃO 27', '2023-07-01', 26, 4691, 763, 0, 7, 0, 0),
+   ('Sul', 'RS', 'Cerro Grande do Sul', 43, 430517, 43009, 'REGIÃO 09', '2023-07-01', 26, 12239, 1343, 0, 29, 0, 0),
+   ('Sul', 'SC', 'Serra Alta', 42, 421755, 42002, 'OESTE', '2023-07-01', 26, 3263, 527, 0, 6, 0, 0),
+   ('Sul', 'SC', 'Seara', 42, 421750, 42010, 'ALTO URUGUAI CATARINENSE', '2023-07-01', 26, 17541, 5372, 0, 42, 0, 0),
+   ('Sul', 'SC', 'Schroeder', 42, 421740, 42011, 'NORDESTE', '2023-07-01', 26, 21365, 7755, 0, 45, 0, 0),
+   ('Centro-Oeste', 'MS', 'São Gabriel do Oeste', 50, 500769, 50001, 'CAMPO GRANDE', '2023-07-01', 26, 26771, 6083, 0, 98, 0, 0),
+   ('Centro-Oeste', 'MS', 'Rio Verde de Mato Grosso', 50, 500740, 50001, 'CAMPO GRANDE', '2023-07-01', 26, 19746, 3853, 0, 84, 0, 0),
+   ('Centro-Oeste', 'MS', 'Rio Brilhante', 50, 500720, 50003, 'DOURADOS', '2023-07-01', 26, 37514, 7604, 0, 96, 0, 0),
+   ('Centro-Oeste', 'MT', 'Paranaíta', 51, 510629, 51001, 'ALTO TAPAJÓS', '2023-07-01', 26, 11225, 5586, 1, 39, 0, 0),
+   ('Centro-Oeste', 'MT', 'Novo Santo Antônio', 51, 510631, 51009, 'NORTE ARAGUAIA KARAJÁ', '2023-07-01', 26, 2640, 945, 0, 6, 0, 0),
+   ('Centro-Oeste', 'MT', 'Pedra Preta', 51, 510637, 51013, 'SUL MATOGROSSENSE', '2023-07-01', 26, 17626, 3660, 0, 72, 0, 0),
+   ('Centro-Oeste', 'GO', 'Planaltina', 52, 521760, 52003, 'ENTORNO NORTE', '2023-07-01', 26, 89918, 9948, 0, 258, 0, 0),
+   ('Centro-Oeste', 'GO', 'Pontalina', 52, 521770, 52002, 'CENTRO SUL', '2023-07-01', 26, 17819, 5074, 0, 61, 0, 0),
+   ('Centro-Oeste', 'GO', 'Porangatu', 52, 521800, 52008, 'NORTE', '2023-07-01', 26, 45394, 4089, 0, 192, 0, 0)
+]
+
+#Número de casos acumulados para o estado do rio de janeiro tanto para a tupla quanto para a lista.
+#Tupla
+CasosAcumuladosTupla = estadosBrasilTupla [125][10] + estadosBrasilTupla [126][10] + estadosBrasilTupla [127][10]
+print(CasosAcumuladosTupla)
+
+#Lista
+CasosAcumuladosLista = estadosBrasilLista [51][10]+estadosBrasilLista[52][10]+estadosBrasilLista[53][10]
+print(CasosAcumuladosLista)
+
+#Apresente na tela todos os óbitos acumulados mostrando os casos apenas para o caso dos estados
+for lista in estadosBrasilLista:
+    estado = lista[1]
+    obitosAcumulados = lista[10]
+    print(f"Estado: {estado}, Óbitos Acumulados: {obitosAcumulados}")
+
+for tupla in estadosBrasilTupla:
+    estado = tupla[1]
+    obitosAcumulados = tupla[10]
+    print(f"Estado: {estado}, Óbitos Acumulados: {obitosAcumulados}")
+
+#Assuma que os dados de óbitos novos para a PB estejam errados em 10 unidades para menos. Sobrescreva a informação tanto na lista quanto na tupla, corrigindo os dados. 
+estadosBrasilLista[33].insert(13,-10)
+print(type(-10))
+estadosBrasilLista[32].insert(13,-10)
+estadosBrasilLista[35].insert(13,-10)
+
+#As duas operações foram possíveis (lista e tupla)? Justifique.
+   #Não foi possível na Tupla, tendo em vista que ela é imutável, ou seja, uma vez que uma informação é inserida, não poderá ser mudada a não ser você vá dentro da tupla no ponto que deseja mudar e realize a alteração.
+
+#Nova lista com apenas dados de 1 estado e todos os municípios e adicione essa lista nova a lista já existente (append ou insert). 
+estadosBrasilLista2 = [
+    ['Nordeste', 'PB', "Olho d'Água", 25, 251040, 25007, '7ª REGIAO', '2023-07-01', 26, 6526, 652, 0, 11, 0, 0],
+    ['Nordeste', 'PB', "Olivedos", 25, 251050, 25016, '16ª REGIAO', '2023-07-01', 26, 3932, 969, 0, 5, 0, 0],
+    ['Nordeste', 'PB', 'Ouro Velho', 25, 251060, 25005, '5ª REGIAO', '2023-07-01', 26, 3039, 657, 1, 3, 0, 0],
+    ['Nordeste', 'PB', 'Parari', 25, 251065, 25005, '5ª REGIAO', '2023-07-01', 26, 1771, 459, 0, 2, 0, 0],
+    ['Nordeste', 'PB', 'Passagem', 25, 251070, 25006, '6ª REGIAO', '2023-07-01', 26, 2419, 237, 0, 2, 0, 0],
+    ['Nordeste', 'PB', 'Poço Dantas', 25, 251203, 25009, '9ª REGIAO', '2023-07-01', 26, 3888, 387, 0, 5, 0, 0],
+    ['Nordeste', 'PB', 'Poço de José de Moura', 25, 251207, 25009, '9ª REGIAO', '2023-07-01', 26, 4307, 418, 0, 8, 0, 0],
+    ['Nordeste', 'PB', 'Pombal', 25, 251210, 25013, '13ª REGIAO', '2023-07-01', 26, 32801, 10703, 4, 92, 0, 0, 0],
+    ['Nordeste', 'PB', 'Princesa Isabel', 25, 251230, 25011, '11ª REGIAO', '2023-07-01', 26, 23345, 4094, 0, 55, 0, 0, 0],
+    ['Nordeste', 'PB', 'Queimadas', 25, 251250, 25015, '15ª REGIAO', '2023-07-01', 26, 43967, 7290, 2, 100, 0, 0, 0],
+    ['Nordeste', 'PB', 'Quixaba', 25, 251260, 25006, '6ª REGIAO', '2023-07-01', 26, 1956, 174, 0, 2, 0, 0, 0],
+    ['Nordeste', 'PB', 'Remígio', 25, 251270, 25003, '3ª REGIAO', '2023-07-01', 26, 19621, 2249, 0, 35, 0, 0, 0]
+]
+
+estadosBrasilLista+=estadosBrasilLista2
+ListaCompleta =len(estadosBrasilLista)
+print(ListaCompleta)
+
+#Exclua as regiões de saúde
+for lista in estadosBrasilLista:
+    del lista[6]
+
+#Verifique qual é o maior valor numérico de óbitos novos e o menor valor numérico de óbitos novos.
+MaiorNObitosNovos = estadosBrasilLista[0][13]
+MenorNObitosNovos = estadosBrasilLista[0][13]
+for estado in estadosBrasilLista:
+    obitosNovos = estado[13]
+    if obitosNovos > MaiorNObitosNovos:
+        MaiorNObitosNovos = obitosNovos
+    elif obitosNovos < MenorNObitosNovos:
+        MenorNObitosNovos = obitosNovos
+print("Maior valor numérico de óbitos novos:", MaiorNObitosNovos)
+print("Menor valor numérico de óbitos novos:", MenorNObitosNovos)
+
+#Crie um dicionário de forma que seja possível encontrar os municípios associados a um estado específico e extrair os dados de casos novos em apenas um comando.
+
+estadoMunicipiosDict = {}
+for municipio in estadosBrasilLista:
+    estado = municipio['Estado']
+    municipioNome = municipio['Municipio']
+    casosNovos = municipio['casos novos']
+    if estado not in estadoMunicipiosDict:
+        estadoMunicipiosDict[estado] = {}
+    estadoMunicipiosDict[estado][municipioNome] = casosNovos
+# Ex de extração PB
+casos_novos_PB = estadoMunicipiosDict.get('PB', {})
+print(casos_novos_PB)
+
+#Extraia os dados de Teresina/PI apresentando os casos novos com um print
+casos_novos_PI = estadoMunicipiosDict.get('PI', {})
+print(casos_novos_PI)

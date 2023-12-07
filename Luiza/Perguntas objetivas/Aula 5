@@ -1,0 +1,16 @@
+Qual a diferença entre Tupla e Lista? 
+A) Tuplas são uma coleção ordenada, na qual se usa colchetes, as listas são sequências de valores. É imutável e utiliza-se parênteses. 
+B) Listas são uma coleção ordenada, na qual se usa colchetes, as tuplas são sequências de valores. É imutável e utiliza-se parênteses. 
+C) Listas são uma coleção ordenada, na qual se usa parênteses, as tuplas são sequências de valores. É imutável e utiliza-se colchetes. 
+
+R: B
+
+
+O que é um dicionário?
+A) Estruturas de dados que implementam mapeamentos entre uma chave (key) e algum conteúdo (value). Usa chaves na linguagem.
+B) Estruturas de código que realizam o mesmo trabalho das tuplas, mas utiliza-se chaves.
+C) Estruturas de código que realizam o mesmo trabalho das listas, mas utiliza-se chaves.
+
+R: A
+
+

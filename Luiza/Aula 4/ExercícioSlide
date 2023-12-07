@@ -1,0 +1,136 @@
+#Habituação:
+animal_habituado = False
+if animal_habituado:
+    registro_habituacao = "Animal habituado. Iniciar procedimento de discriminação."
+else:
+    registro_habituacao = "Animal não habituado. Realizar o processo de habituação."
+print(registro_habituacao)
+
+#Regime de aproximações
+distancia_aproximacao = 30  # cm
+diminuiu_distancia = True
+if diminuiu_distancia:
+    liberar_recompensa = 0.5
+    registro_aproximacao = f"Animal se aproximou. Recompensa de {liberar_recompensa} ml liberada."
+elif distancia_aproximacao == 30:
+    registro_aproximacao = "Sem mudança na aproximação."
+else:
+    registro_aproximacao = "Animal se afastou. Nenhuma recompensa liberada."
+print(registro_aproximacao)
+print("Quantidade de recompensa liberada: {liberar_recompensa} ml")
+
+#Regime de aproximação 2
+toques = 0
+if toques < 20:
+    print("Animal ainda não tocou na barra 20 vezes. Continuar na mesma etapa.")
+elif toques == 20:
+    print("Animal tocou na barra 20 vezes. Avançar para a próxima etapa.")
+else:
+    print("Erro: O animal tocou mais de 20 vezes. Verificar o experimento.")
+#4
+som_emitido = True  
+toque_na_barra_esquerda = True  
+
+# Verificar se o som foi emitido e o animal tocou na barra esquerda
+if som_emitido and toque_na_barra_esquerda:
+    # Se ambos os requisitos forem atendidos, liberar 0,5ml de rec
+    print("Liberar 0,5ml de rec.")
+elif som_emitido:
+    # Se o som foi emitido, mas o animal não tocou na barra esquerda
+    print("Não liberar nada, o animal não tocou na barra esquerda.")
+else:
+    # Se o som não foi emitido, não fazer nada
+    print("Não liberar nada, o som não foi emitido.")
+
+#5
+som2_emitido = True
+toque_na_barra_direita = True
+
+# Verificar se o som2 foi emitido e o animal tocou na barra direita
+if som2_emitido and toque_na_barra_direita:
+    print("Liberar 0,5ml de rec.")
+else:
+    print("Não liberar nada.")
+
+#6
+experiment_count = 50
+elapsed_time_minutes = 30
+
+if experiment_count >= 50 and elapsed_time_minutes <= 30:
+    print("O experimento seguirá para a próxima fase.")
+elif experiment_count < 50:
+    print("Ainda é necessário realizar mais experimentos.")
+else:
+    print("Tempo limite excedido, o experimento não pode continuar.")
+
+
+#ATUALIZAÇÃO - ESTRUTURA DE REPETIÇÃO
+experiment_count = 0
+elapsed_time_minutes = 0
+
+while experiment_count < 50 and elapsed_time_minutes <= 30:
+    habituado = True
+    variavel_aproximacao = 30
+    if animal_aproximou:
+        liberar_rec(0.5)
+    if toques_na_barra >= 20:
+        print("O experimento passou para a próxima etapa.")
+    if som_emitido == som1 and toque_na_barra == "esquerda":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+    if som_emitido == som2 and toque_na_barra == "direita":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+    experiment_count += 1
+    elapsed_time_minutes += 1
+print("O experimento seguirá para a próxima fase.")
+
+#ATUALIZAÇÃO - FUNÇÕES
+# Função para verificar se o animal está habituado
+def verificar_habituacao():
+    return True  # Lógica para verificar a habituação do animal
+
+# Função para liberar rec
+def liberar_rec(quantidade):
+    # Lógica para liberar a quantidade especificada de rec
+    pass
+
+# Função para realizar um experimento
+def realizar_experimento():
+    global toques_na_barra
+    global som_emitido
+    global toque_na_barra
+
+    variavel_aproximacao = 30
+
+    if verificar_habituacao():
+        variavel_aproximacao = 30
+
+    if animal_aproximou:
+        liberar_rec(0.5)
+
+    if toques_na_barra >= 20:
+        print("O experimento passou para a próxima etapa.")
+
+    if som_emitido == som1 and toque_na_barra == "esquerda":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+
+    if som_emitido == som2 and toque_na_barra == "direita":
+        liberar_rec(0.5)
+    else:
+        liberar_rec(0)
+
+# Fluxo principal do programa
+experiment_count = 0
+elapsed_time_minutes = 0
+
+while experiment_count < 50 and elapsed_time_minutes <= 30:
+    realizar_experimento()
+    experiment_count += 1
+    elapsed_time_minutes += 1
+
+print("O experimento seguirá para a próxima fase.")

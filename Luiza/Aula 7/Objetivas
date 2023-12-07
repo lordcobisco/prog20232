@@ -1,0 +1,27 @@
+1- Qual das opções abaixo é usada para definir função?
+A) Estruturas de repetição, variáveis globais e condicionais. 
+B) Comentários, operadores matemáticos e loops. 
+C) Bibliotecas, interfaces gráficas e vetores.
+D) Parâmetros, corpo da função e chamada da função. 
+R: D
+
+2- Por que é vantajoso escrever um programa na forma de funções em programação?
+A) Para aumentar a complexidade do programa. 
+B) Para tornar o código menos organizado.
+C) Para melhorar a reutilização de código e a organização.
+D) Para diminuir a legibilidade do código.
+R: C
+
+3- Qual a função de uma classe orientada a objetos?
+A)  Uma classe é um molde para criar objetos com atributos e métodos relacionados. 
+B) Uma classe é um tipo de função usada para processar dados.
+C) Uma classe representa um conjunto de loops em um programa.
+D) Uma classe é uma variável especial usada exclusivamente para controle de fluxo em um programa.
+R: A 
+
+4- Na programação orientada a objetos, quais elementos da linguagem são comumente utilizados para definir e manipular classes?
+A) Tipos de dados e ponteiros. 
+B) Variáveis globais e funções recursivas. 
+C) Operadores lógicos e condicionais.
+D) Palavras-chave como class, new, public e private. 
+R: D
