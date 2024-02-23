@@ -1,0 +1,34 @@
+Qual é a principal finalidade da linguagem de programação Python?
+a) Jogos e entretenimento.
+b) Aplicações simples.
+c) Desenvolvimento web, análise de dados, automação de tarefas, etc.
+d) Fins pedagógicos e acadêmicos.
+
+
+Marque a verdadeira assertiva acerca de Python:
+a) Python não possui ambientes de programação específicos, pois é executado diretamente no prompt de comando.
+b) Os ambientes mais comuns para programação em Python incluem o IDLE, o Jupyter Notebook e o Visual Studio Code, sendo necessários um computador com sistema operacional Windows e pelo menos 16 GB de RAM.
+c) Python pode ser programado apenas em sistemas Unix, como o Linux, e não requer recursos específicos.
+d) Qualquer ambiente de programação e computador com recursos básicos são suficientes para programar em Python.
+
+
+Qual é a finalidade dos comentários em Python e como eles são escritos?
+a) Ocultar partes do código que não devem ser executadas e são escritos entre colchetes [ ].
+b) Documentar o código e são escritos com um caractere de hashtag (#) no início da linha.
+c) Fins estéticos e não têm funcionalidade real.
+d) Escritos com barras diagonais () antes e depois do texto que deve ser comentado.
+
+
+Que tipo de ferramenta geralmente é utilizada para escrever comandos de entrada e saída na linguagem Python?
+a) Planilhas.
+b) Editores de texto.
+c) IDEs, como o Visual Studio Code.
+d) Google Chrome.
+
+
+Qual é a relevância do "debug" em Python?
+a) Teste.
+b) Velocidade para programação.
+c) Identificar e corrigir erros.
+d) Complexificação do código para programadores experientes.
+

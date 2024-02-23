@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Amplitude Configuration</title>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js" integrity="sha512-UNbeFrHORGTzMn3HTt00fvdojBYHLPxJbLChmtoyDwB6P9hX5mah3kMKm0HHNx/EvSPJt14b+SlD8xhuZ4w9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="hide_show">
+
+        <div class="sub_cat_box" id="cat5">
+            <ul>
+                    <p><label>Server address</label>	
+                        <input id="mqttHost" value="10.1.0.44">
+                    </p>
+
+                    <p><label>Port</label>
+                        <input id="mqttPort" value="1887">
+                    </p>
+                    <!-- <p><label>Device Name</label>
+                    <input id="deviceName" value="6200">
+                    </p> -->
+                    
+                    <button onclick="connectMQTT()">Connect to MQTT</button>
+				
+					<p>
+						<label>Stimulation Device 1</label>
+                        <input id="stim1" value="3632">
+					
+						<label>Stimulation Device 1</label>
+                        <input id="stim2" value="4360">
+					
+						<label>Inertial Sensor</label>
+						<input id="sensor" value="3912">
+
+						<label>Inertial Sensor Frequence</label>
+						<input id="sensorFreq" value="1">
+					</p>
+
+                    <p><label>Largura do Pulso</label>
+                        <input id="ton" value="200">
+					</p>
+                    <p><label>Período</label>
+                        <input id="period" value="20000">
+					</p>
+                        
+                        <label>Valor usado para incrementar ou decrementar</label>
+                       <input id="incremento" value="0.1">
+                	<button onclick="aumentar()">aumentar</button>
+                	<button onclick="diminuir()">diminuir</button>
+
+					<p>
+						<br>
+						<button onclick="start()">Começar aquisição</button>
+						<button onclick="stop()">Parar aquisição</button>
+					</p>
+					
+					<p>
+						<label>RPM min</label>
+						<input id="rpmMin" value="10">
+						<label>RPM max</label>
+						<input id="rpmMax" value="50">
+					</p>
+
+					<p>
+						<label>Fes min</label>
+						<input id="fesMin" value="5,5,5,5;5,5,5,5">
+						<label>Fes max</label>
+						<input id="fesMax" value="14,14,14,14;14,14,14,14">
+					</p>
+
+                    <p><label>Tensão Para Perna Direita Apoio Terminal</label>
+                    <input id="m1" value="7,0,0,8;7,0,8,0">
+                    </p>
+               
+                    <p><label>Tensão Para Perna Direita Balanço Inicial</label>
+                    <input id="m2" value="7,0,0,0;0,8,0,8">
+                    </p>
+               
+                    <p><label>Tensão Para Perna Direita Contato Inicial</label>
+                    <input id="m3" value="7,0,8,0;7,0,0,8">
+                    </p>
+               
+                    <p><label>Tensão Para Perna Direita Apoio Médio</label>
+                    <input id="m4" value="0,8,0,8;7,0,0,0">
+                    </p>
+
+                    <p><label>Tensão Para Extensão do Joelho Esquerdo</label>
+                        <input id="p1" value="10,10,0,0">
+                    </p>
+                
+                    <p><label>Tensão Para Extensão do Joelho Direito </label>
+                        <input id="p2" value="0,0,10,10">
+                    </p>
+
+                    <p><label>Faixa Para Detecção da Perna Esquerda Extendida (Min, Max)</label>
+                        <input id="a1" value="-179,-150">
+                    </p>
+                   
+                    <p><label>Faixa Para Detecção da Perna Direita Extendida (Min, Max)</label>
+                        <input id="a2" value="150,175">
+                    </p>
+					<button onclick="sendChannelCangedCommand()">Atualizar Parâmetros</button>
+					<button type="button" onclick="saveDynamicDataToFile();">Click to Save</button>
+					<input type="file" id="file-selector">
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script> 
+        let client;
+        let reconnectTimeout = 2000;
+        let deviceName = ''
+        let hostName;
+        let port = 1884;
+        let subscribeOptions = {
+            qos: 0,  // QoS
+            invocationContext: {foo: true},  // Passed to success / failure callback
+            onFailure: onConnectionLost,
+            timeout: 10
+        };
+        
+		
+		const fileSelector = document.getElementById('file-selector');
+		fileSelector.addEventListener('change', (event) => {
+			const fileList = event.target.files[0];
+			var reader = new FileReader();
+			reader.readAsText(fileList, "UTF-8");
+			reader.onload = function (evt) {
+				var result = JSON.parse(evt.target.result);
+				document.getElementById("ton").value = result["ton"];
+				document.getElementById("period").value = result["period"];
+				document.getElementById("m1").value = result["m1"];
+				document.getElementById("m2").value = result["m2"];
+				document.getElementById("m3").value = result["m3"];
+				document.getElementById("m4").value = result["m4"];
+				document.getElementById("p1").value = result["p1"];
+				document.getElementById("p2").value = result["p2"];
+				document.getElementById("a1").value = result["a1"];
+				document.getElementById("a2").value = result["a2"];
+				document.getElementById("rpmMin").value = result["rpmMin"];
+				document.getElementById("rpmMax").value = result["rpmMax"];
+				document.getElementById("fesMin").value = result["fesMin"];
+				document.getElementById("fesMax").value = result["fesMax"];
+				document.getElementById("stim1").value = result["stim1"];
+				document.getElementById("stim2").value = result["stim2"];
+				document.getElementById("sensor").value = result["sensor"];
+				document.getElementById("sensorFreq").value = result["sensorFreq"];
+				console.log( evt.target.result);
+			}
+			reader.onerror = function (evt) {
+				console.log( "error reading file");
+			}
+			console.log(fileList);
+		});
+        
+            
+        function connectMQTT(){
+            hostName = document.getElementById("mqttHost").value
+            port = document.getElementById("mqttPort").value
+            deviceName = "web" + new Date().getTime()
+            client = new Paho.MQTT.Client(hostName, Number(port), "", deviceName);
+
+            // set callback handlers
+            client.onConnectionLost = onConnectionLost;
+            client.onMessageArrived = onMessageArrived;
+            
+            // connect the client
+            client.connect({onSuccess: Connected,onFailure: onConnectionLost,keepAliveInterval: 10000,timeout: 300});
+        }
+	
+	function aumentar()
+	{
+	    m1 = document.getElementById("m1").value;
+	    inc = parseFloat(document.getElementById("incremento").value);
+	    l1 = m1.split(";")[0].split(",");
+	    l2 = m1.split(";")[1].split(",");
+	    let newl1 = "",newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+    		
+	    }
+	    document.getElementById("m1").value = newl1+";"+newl2;
+
+            
+            m2 = document.getElementById("m2").value;
+            l1 = m2.split(";")[0].split(",");
+	    l2 = m2.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m2").value = newl1+";"+newl2;
+    	    
+            m3 = document.getElementById("m3").value;
+            l1 = m3.split(";")[0].split(",");
+	    l2 = m3.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m3").value = newl1+";"+newl2;
+	    
+            m4 = document.getElementById("m4").value;
+            l1 = m4.split(";")[0].split(",");
+	    l2 = m4.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])+inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])+inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m4").value = newl1+";"+newl2;
+	    sendChannelCangedCommand();
+	    
+	}
+	
+	function diminuir()
+	{
+	    m1 = document.getElementById("m1").value;
+	    inc = parseFloat(document.getElementById("incremento").value);
+	    l1 = m1.split(";")[0].split(",");
+	    l2 = m1.split(";")[1].split(",");
+	    let newl1 = "",newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+    		
+	    }
+	    document.getElementById("m1").value = newl1+";"+newl2;
+
+            
+            m2 = document.getElementById("m2").value;
+            l1 = m2.split(";")[0].split(",");
+	    l2 = m2.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m2").value = newl1+";"+newl2;
+    	    
+            m3 = document.getElementById("m3").value;
+            l1 = m3.split(";")[0].split(",");
+	    l2 = m3.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m3").value = newl1+";"+newl2;
+	    
+            m4 = document.getElementById("m4").value;
+            l1 = m4.split(";")[0].split(",");
+	    l2 = m4.split(";")[1].split(",");
+	    newl1 = ""; newl2 = "";
+	    for(let i=0;i<4;++i){
+	    	if(i!=3){
+	    		if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1)+",";
+	    		else newl1 += (0).toFixed(1)+",";
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1)+",";
+	    		else newl2 += (0).toFixed(1)+",";
+    		}
+    		else{
+			if(parseFloat(l1[i])!=0) newl1 += (parseFloat(l1[i])-inc).toFixed(1);
+	    		else newl1 += (0).toFixed(1);
+	    		if(parseFloat(l2[i])!=0) newl2 += (parseFloat(l2[i])-inc).toFixed(1);
+	    		else newl2 += (0).toFixed(1);
+    		}
+	    }
+	    document.getElementById("m4").value = newl1+";"+newl2;
+	    sendChannelCangedCommand();
+	    
+	}
+
+		function saveDynamicDataToFile() {
+
+			ton = document.getElementById("ton").value;
+            period = document.getElementById("period").value;
+            m1 = document.getElementById("m1").value;
+            m2 = document.getElementById("m2").value;
+            m3 = document.getElementById("m3").value;
+            m4 = document.getElementById("m4").value;
+            p1 = document.getElementById("p1").value;
+            p2 = document.getElementById("p2").value;
+            a1 = document.getElementById("a1").value;
+            a2 = document.getElementById("a2").value;
+			rpmMin = document.getElementById("rpmMin").value;
+			rpmMax = document.getElementById("rpmMax").value;
+			fesMin = document.getElementById("fesMin").value;
+			fesMax = document.getElementById("fesMax").value;
+			stim1 = document.getElementById("stim1").value;
+			stim2 = document.getElementById("stim2").value;
+			sensor = document.getElementById("sensor").value;
+			sensorFreq = document.getElementById("sensorFreq").value;
+
+			var blob = new Blob([
+			'{"m1":"'+m1+'","m2":"'+m2+'","m3":"'+m3+'","m4":"'+m4+'","p1":"'+p1+'","p2":"'+p2+'","a1":"'+a1+'","a2":"'+a2+'","ton":'+ton+',"period":'+period+',"stim1":'+stim1+',"stim2":'+stim2+',"sensor":'+sensor+',"rpmMin":'+rpmMin+',"rpmMax":'+rpmMax+',"sensorFreq":'+sensorFreq+',"fesMin":"'+fesMin+'","fesMax":"'+fesMax+'"}'
+			], { type: "text/plain;charset=utf-8" });
+			saveAs(blob, "config.txt");
+		}
+		function sendWebConmmand(){
+			ton = document.getElementById("ton").value;
+            period = document.getElementById("period").value;
+            m1 = document.getElementById("m1").value;
+            m2 = document.getElementById("m2").value;
+            m3 = document.getElementById("m3").value;
+            m4 = document.getElementById("m4").value;
+            p1 = document.getElementById("p1").value;
+            p2 = document.getElementById("p2").value;
+            a1 = document.getElementById("a1").value;
+            a2 = document.getElementById("a2").value;
+			rpmMin = document.getElementById("rpmMin").value;
+			rpmMax = document.getElementById("rpmMax").value;
+			fesMin = document.getElementById("fesMin").value;
+			fesMax = document.getElementById("fesMax").value;
+			stim1 = document.getElementById("stim1").value;
+			stim2 = document.getElementById("stim2").value;
+			sensor = document.getElementById("sensor").value;
+			sensorFreq = document.getElementById("sensorFreq").value;
+
+            message = new Paho.MQTT.Message('{"m1":"'+m1+'","m2":"'+m2+'","m3":"'+m3+'","m4":"'+m4+'","p1":"'+p1+'","p2":"'+p2+'","a1":"'+a1+'","a2":"'+a2+'","ton":'+ton+',"period":'+period+',"stim1":'+stim1+',"stim2":'+stim2+',"sensor":'+sensor+',"rpmMin":'+rpmMin+',"rpmMax":'+rpmMax+',"sensorFreq":'+sensorFreq+',"fesMin":"'+fesMin+'","fesMax":"'+fesMax+'"}');
+            message.destinationName = "webCommand";
+            client.send(message);
+		}
+	
+        // called when the client connects
+        function Connected() {
+            // Once a connection has been made, make a subscription and send a message.
+            alert("MQTT Connected");
+            client.subscribe("webCommand",subscribeOptions);
+			client.subscribe("requestStart",subscribeOptions);
+			sendWebConmmand()
+        }
+
+        // called when the client loses its connection
+        function onConnectionLost(responseObject) {
+            if (responseObject.errorCode !== 0) {
+                console.log("onConnectionLost:"+responseObject.errorMessage);
+            }
+        }
+
+        // called when a message arrives
+        function onMessageArrived(message) {
+            console.log("onMessageArrived: "+message.payloadString);
+			console.log("Topic: "+message.destinationName);
+			if(message.destinationName == "requestStart"){
+				sendWebConmmand()
+				
+				var w = window.open('', '', 'width=300,height=2px')
+				w.document.write('Open vibe sent a command to start inertial sensors')
+				w.focus()
+				setTimeout(function () { w.close(); }, 2000);
+
+			}
+        }
+
+        // m1 = document.getElementById("m1");
+        // m2 = document.getElementById("m2");
+        // m3 = document.getElementById("m3");
+        // m4 = document.getElementById("m4");
+        // p1 = document.getElementById("p1");
+        // p2 = document.getElementById("p2");
+        // a1 = document.getElementById("a1");
+        // a2 = document.getElementById("a2");
+
+        
+        function sendChannelCangedCommand() {
+            ton = document.getElementById("ton").value;
+            period = document.getElementById("period").value;
+            m1 = document.getElementById("m1").value;
+            m2 = document.getElementById("m2").value;
+            m3 = document.getElementById("m3").value;
+            m4 = document.getElementById("m4").value;
+            p1 = document.getElementById("p1").value;
+            p2 = document.getElementById("p2").value;
+            a1 = document.getElementById("a1").value;
+            a2 = document.getElementById("a2").value;
+			rpmMin = document.getElementById("rpmMin").value;
+			rpmMax = document.getElementById("rpmMax").value;
+			fesMin = document.getElementById("fesMin").value;
+			fesMax = document.getElementById("fesMax").value;
+			stim1 = document.getElementById("stim1").value;
+			stim2 = document.getElementById("stim2").value;
+			sensor = document.getElementById("sensor").value;
+			sensorFreq = document.getElementById("sensorFreq").value;
+
+			message = new Paho.MQTT.Message('{"m1":"'+m1+'","m2":"'+m2+'","m3":"'+m3+'","m4":"'+m4+'","p1":"'+p1+'","p2":"'+p2+'","a1":"'+a1+'","a2":"'+a2+'","ton":'+ton+',"period":'+period+',"stim1":'+stim1+',"stim2":'+stim2+',"sensor":'+sensor+',"rpmMin":'+rpmMin+',"rpmMax":'+rpmMax+',"sensorFreq":'+sensorFreq+',"fesMin":"'+fesMin+'","fesMax":"'+fesMax+'"}');
+			message.destinationName = "webCommand";
+            client.send(message);
+        } 
+
+		function start() {
+            message = new Paho.MQTT.Message('1');
+            message.destinationName = "start";
+            client.send(message);
+        } 
+
+		function stop() {
+            message = new Paho.MQTT.Message('0');
+            message.destinationName = "start";
+            client.send(message);
+        } 
+    </script>
+
+    </body>
+</html>

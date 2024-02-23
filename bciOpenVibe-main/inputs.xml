@@ -1,0 +1,198 @@
+<OpenViBE-Scenario>
+	<FormatVersion>2</FormatVersion>
+	<Creator>OpenViBE Designer</Creator>
+	<CreatorVersion>3.3.1</CreatorVersion>
+	<Settings></Settings>
+	<Inputs></Inputs>
+	<Outputs></Outputs>
+	<Boxes>
+		<Box>
+			<Identifier>(0x00001d15, 0x000035b2)</Identifier>
+			<Name>IMU Acquisition</Name>
+			<AlgorithmClassIdentifier>(0x5dc4f669, 0xd3fd4d63)</AlgorithmClassIdentifier>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Generated signals</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Box Clock frequency (Hz)</Name>
+					<DefaultValue>20</DefaultValue>
+					<Value>1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xb0d0db45, 0x49cbc34a)</TypeIdentifier>
+					<Name>Script</Name>
+					<DefaultValue></DefaultValue>
+					<Value>C:/Users/andre/Desktop/openvibePythonScripts_Denis/mqttInputIMUDirect.py</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Sensor Length</Name>
+					<DefaultValue>7</DefaultValue>
+					<Value>6</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Sensor Sampling frequency</Name>
+					<DefaultValue>20</DefaultValue>
+					<Value>10</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Generated epoch sample count</Name>
+					<DefaultValue>32</DefaultValue>
+					<Value>1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<Identifier>(0x5536de4b, 0x404a83f2)</Identifier>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>MQTT Server Host</Name>
+					<DefaultValue>10.1.1.169</DefaultValue>
+					<Value>10.1.1.243</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<Identifier>(0x28943a30, 0x0e161dfe)</Identifier>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>MQTT Gate</Name>
+					<DefaultValue>1883</DefaultValue>
+					<Value>1883</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<Identifier>(0x471890c8, 0x4cdc3c3f)</Identifier>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>IMU Sensor Number</Name>
+					<DefaultValue>7288</DefaultValue>
+					<Value>8792</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x17ee7c08, 0x94c14893)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>512</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x2a651510, 0xb4fad0d4)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x61d11811, 0x71e65362)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xf191c1c8, 0xa0123976)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x0000291b, 0x00004ab4)</Identifier>
+			<Name>LSL Export</Name>
+			<AlgorithmClassIdentifier>(0x6f3467ff, 0x52794da6)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Input stimulations</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Signal stream</Name>
+					<DefaultValue>openvibeSignal</DefaultValue>
+					<Value>openvibeSignal</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Marker stream</Name>
+					<DefaultValue>openvibeMarkers</DefaultValue>
+					<Value>openvibeMarkers</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>512</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xcb2933f5, 0x2180a23d)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+	</Boxes>
+	<Links>
+		<Link>
+			<Identifier>(0x00005c70, 0x000064f5)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00001d15, 0x000035b2)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x0000291b, 0x00004ab4)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+	</Links>
+	<Comments></Comments>
+	<Metadata>
+		<Entry>
+			<Identifier>(0x0000016c, 0x00003e74)</Identifier>
+			<Type>(0x3bcce5d2, 0x43f2d968)</Type>
+			<Data>[{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":1,"height":320,"identifier":"(0x00000cf7, 0x00002e5b)","name":"Default window","parentIdentifier":"(0xffffffff, 0xffffffff)","type":1,"width":480},{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":1,"identifier":"(0x0000236f, 0x000025eb)","index":0,"name":"Default tab","parentIdentifier":"(0x00000cf7, 0x00002e5b)","type":2},{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":0,"identifier":"(0x000070f9, 0x00007138)","index":0,"name":"Empty","parentIdentifier":"(0x0000236f, 0x000025eb)","type":0}]</Data>
+		</Entry>
+	</Metadata>
+</OpenViBE-Scenario>
