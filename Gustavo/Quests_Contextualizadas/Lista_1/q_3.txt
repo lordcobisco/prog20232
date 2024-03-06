@@ -1,0 +1,20 @@
+3. A partir das informações colocadas no texto da questão 1, destacar o que seriam as estruturas de repetição e de decisão:
+
+Obs 1: Lembrando que estruturas de decisão costumam usar as palavras: se e caso.
+Obs 2: Lembrando que estruturas de repetição costumam usar as palavras: enquanto, para, repita.
+Obs 3: Essa questão será avaliada da seguinte forma:
+    A identificação das estruturas de decisão foi corretamente realizada;
+    A identificação das estruturas de repetição foi corretamente realizada.
+
+
+Respostas:
+
+1 - Estruturas de decisão ou condicionais são blocos de código que fucionam a partir de determida sentença ser vedadeira ou falsa. 
+No caso da descrição narrativa que fiz na primeira questão utilizei essa farramenta para testar a posição do paciente em relação ao equipamento.
+Mas também poderia usar para outros pontos como, validar se os dados do paciente estão corretos, testar metricas da passada dele em relação ao aparelho e por ai vai
+
+2 - Estruturas de repetição ou laços são comandos utilizados na programação para representar instruções que deveram ocorrer uma certa quantidade de vezes.
+Na minha resposta da questão 1 eu a usei na tarefa de fehcar todas as travas presentes no colete do individuo que usará o equipamento.
+Porém também serviria para contar a quantidade de passos que esse individuo deu durante o exame, ou fazer aquisições de dados em intervalos determinados.
+
+

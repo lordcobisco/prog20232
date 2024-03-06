@@ -1,0 +1,100 @@
+Descrição Narrativa para utilização do Lokomat®:
+
+Fonte dessa descrição: https://www.youtube.com/watch?v=1MgpCOr3BfM
+
+  ===========================================Bloco - Fase Inicial ========================
+  1. Cumprimentar a Pessoa Com Deficiência Física que ira se submeter ao processo de reabilitação
+  através do Lokomat
+
+  ===========================================Bloco - Preparação do Paciente ========================
+  2. Leva-lo até o local onde o Lokomat se encontra
+  3. Com uma fita metrica coletar o comprimento da coxa do paciente (Da cintura ao joelho)
+  4. Pegar o colete
+  5. No colete, procurar uma seta localizada na parte mais ampla
+  6. Com o paciente ainda na cadeira de rodas, a partir das costas do paciente, colocar 
+  em volta da cintura do paciente o colete vinculado a utilização do equipamento
+  7. Ao posicionar o colete, verificar se a seta localizada no colete, que estará posicionado 
+  nas costas do paciente, está alinhada com a coluna do paciente.
+    7.1 Caso a seta não esteja alinhada com a coluna do paciente, ajustar o colete até que a seta esteja 
+    alinhada a coluna do paciente
+  8. Ir para frente do paciente
+
+  9.{
+    pegar as alças do colete, na altura das costelas e / ou entre as coxas; 
+    travar o encaixe;
+    Vertificar se as alças estão travadas;
+  } Repita enquanto houver alças soltas
+
+  ===========================================Bloco - Posicionando no Aparelho ========================
+  10. Levar o paciente para a esteira do lokomat
+  11. Através de um controle, descer as travas que iram levantar o paciente
+  12. Encaixar as alças do colete do paciente nas travas vindas do lokomat
+  13. Com o mesmo controle do aparelho, subir as travas e levantar o paciente
+
+  14. Se o paciente estiver alçado em uma postura reta e o paciente for cadeirante:
+          Tirar a cadeira de rodas
+      Se não, Se o paciente estiver alçado em uma postura reta:
+          Parar de levantar o paciente
+      Se não:
+          Continuar levantando o paciente através do controle
+
+  15. Trazer o braço do lokomat para a esteira 
+  16. Descer o braço do lokomat
+
+  17. Ir para frente do paciente
+  18. Posicionar a parte acochoada do braço na cintura do paciente
+  19. Através de uma manivela, fechar o braço de forma confortavel na cintura do paciente
+  20. Pegar a alça do braço do lokomat, que estará localizada ao lado do paciente e envolver o
+  Torax do paciente
+  21. Ficando abaixado, posicionar o equipamento do braço em volta do tornozelo do paciente
+  22. Amarrar a alça do equipamento em volta do tornozelo
+  23. Verificar se a amplitude do movimento da perna do paciente está aceitavel
+  24. Ainda abaixado, amarrar a alça do pé em volta do dorso do pé do paciente
+
+  ===========================================Bloco - Ligando a maquina ========================
+
+  25. Ir no computador vinculado ao Lokomat
+  26. Abrir a interface da maquina através do mouse
+  27. Com o mouse, apertar no botão de treino que aparece na tela
+  28. Com o mouse, apertar no botão de Start Position que aparece na tela
+  29. Com o mouse, apertar no botão de Start que aparece na tela
+  30. Descer o paciente para que a passada dele seja estavel e rente a esteira
+
+******************************************************************************************************
+  
+Descrição Narrativa para utilização do  ZeroG®:
+
+Fonte dessa descrição: https://www.youtube.com/watch?v=IDdtXn9oyC0
+
+  ===========================================Bloco - Fase Inicial ========================
+  1. Cumprimentar a Pessoa que ira se submeter ao processo COM O zeroG
+
+  ===========================================Bloco - Preparação do Paciente ========================
+  2. Leva-lo até o local onde o zeroG se encontra
+  3. Pegar o colete do aparelho e posiciona-lo em volta do tronco do voluntario
+  4.{
+    pegar as alças do colete, na altura das costelas e / ou entre as coxas; 
+    travar o encaixe;
+    Vertificar se as alças estão travadas;
+  } Repita enquanto tiver alças
+
+  ===========================================Bloco - Posicionando no Aparelho ========================
+  5. Levar o paciente para a esteira do zeroG
+  6. Através de um controle, descer as travas que iram levantar o paciente
+  7. Encaixar as alças do colete do paciente nas travas vindas do zeroG
+  8. Com o mesmo controle do aparelho, subir as travas e levantar o paciente
+
+  9. Se o paciente estiver alçado em uma postura reta e o paciente for cadeirante:
+          Tirar a cadeira de rodas
+      Se não, Se o paciente estiver alçado em uma postura reta:
+          Parar de levantar o paciente
+      Se não:
+          Continuar levantando o paciente através do controle
+
+  10. Verificar se a amplitude do movimento da perna do paciente está aceitavel
+
+  ===========================================Bloco - Ligando a maquina ========================
+
+  11. Ir no computador / tablet vinculado ao zeroG e configurar a altura da alça, para que o pé
+      do vonluntario fique rente ao chão e determinar a velocidade da alça pelo caminho que será
+      percorrido pelo paciente através da passada
